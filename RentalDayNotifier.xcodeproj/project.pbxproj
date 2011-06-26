@@ -1,0 +1,304 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		07C58BFF13B74001002832EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C58BFE13B74001002832EE /* UIKit.framework */; };
+		07C58C0113B74001002832EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C58C0013B74001002832EE /* Foundation.framework */; };
+		07C58C0313B74001002832EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C58C0213B74001002832EE /* CoreGraphics.framework */; };
+		07C58C0913B74001002832EE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 07C58C0713B74001002832EE /* InfoPlist.strings */; };
+		07C58C0C13B74001002832EE /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C58C0B13B74001002832EE /* main.m */; };
+		07C58C0F13B74001002832EE /* RentalDayNotifierAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C58C0E13B74001002832EE /* RentalDayNotifierAppDelegate.m */; };
+		07C58C1213B74001002832EE /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07C58C1013B74001002832EE /* MainWindow.xib */; };
+		07C58C1513B74002002832EE /* FirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C58C1413B74002002832EE /* FirstViewController.m */; };
+		07C58C1813B74002002832EE /* SecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 07C58C1713B74002002832EE /* SecondViewController.m */; };
+		07C58C1B13B74002002832EE /* FirstView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07C58C1913B74002002832EE /* FirstView.xib */; };
+		07C58C1E13B74002002832EE /* SecondView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 07C58C1C13B74002002832EE /* SecondView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		07C58BFA13B74001002832EE /* RentalDayNotifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentalDayNotifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		07C58BFE13B74001002832EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		07C58C0013B74001002832EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		07C58C0213B74001002832EE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		07C58C0613B74001002832EE /* RentalDayNotifier-Info.plist */ = {isa = PBXFileReference; path = "RentalDayNotifier-Info.plist"; sourceTree = "<group>"; };
+		07C58C0813B74001002832EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		07C58C0A13B74001002832EE /* RentalDayNotifier-Prefix.pch */ = {isa = PBXFileReference; path = "RentalDayNotifier-Prefix.pch"; sourceTree = "<group>"; };
+		07C58C0B13B74001002832EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		07C58C0D13B74001002832EE /* RentalDayNotifierAppDelegate.h */ = {isa = PBXFileReference; path = RentalDayNotifierAppDelegate.h; sourceTree = "<group>"; };
+		07C58C0E13B74001002832EE /* RentalDayNotifierAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RentalDayNotifierAppDelegate.m; sourceTree = "<group>"; };
+		07C58C1113B74001002832EE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		07C58C1313B74002002832EE /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		07C58C1413B74002002832EE /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
+		07C58C1613B74002002832EE /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		07C58C1713B74002002832EE /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
+		07C58C1A13B74002002832EE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
+		07C58C1D13B74002002832EE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		07C58BF713B74001002832EE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C58BFF13B74001002832EE /* UIKit.framework in Frameworks */,
+				07C58C0113B74001002832EE /* Foundation.framework in Frameworks */,
+				07C58C0313B74001002832EE /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		07C58BEF13B74001002832EE = {
+			isa = PBXGroup;
+			children = (
+				07C58C0413B74001002832EE /* RentalDayNotifier */,
+				07C58BFD13B74001002832EE /* Frameworks */,
+				07C58BFB13B74001002832EE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		07C58BFB13B74001002832EE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				07C58BFA13B74001002832EE /* RentalDayNotifier.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		07C58BFD13B74001002832EE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				07C58BFE13B74001002832EE /* UIKit.framework */,
+				07C58C0013B74001002832EE /* Foundation.framework */,
+				07C58C0213B74001002832EE /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		07C58C0413B74001002832EE /* RentalDayNotifier */ = {
+			isa = PBXGroup;
+			children = (
+				07C58C0D13B74001002832EE /* RentalDayNotifierAppDelegate.h */,
+				07C58C0E13B74001002832EE /* RentalDayNotifierAppDelegate.m */,
+				07C58C1013B74001002832EE /* MainWindow.xib */,
+				07C58C1313B74002002832EE /* FirstViewController.h */,
+				07C58C1413B74002002832EE /* FirstViewController.m */,
+				07C58C1613B74002002832EE /* SecondViewController.h */,
+				07C58C1713B74002002832EE /* SecondViewController.m */,
+				07C58C1913B74002002832EE /* FirstView.xib */,
+				07C58C1C13B74002002832EE /* SecondView.xib */,
+				07C58C0513B74001002832EE /* Supporting Files */,
+			);
+			path = RentalDayNotifier;
+			sourceTree = "<group>";
+		};
+		07C58C0513B74001002832EE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				07C58C0613B74001002832EE /* RentalDayNotifier-Info.plist */,
+				07C58C0713B74001002832EE /* InfoPlist.strings */,
+				07C58C0A13B74001002832EE /* RentalDayNotifier-Prefix.pch */,
+				07C58C0B13B74001002832EE /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		07C58BF913B74001002832EE /* RentalDayNotifier */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 07C58C2113B74002002832EE /* Build configuration list for PBXNativeTarget "RentalDayNotifier" */;
+			buildPhases = (
+				07C58BF613B74001002832EE /* Sources */,
+				07C58BF713B74001002832EE /* Frameworks */,
+				07C58BF813B74001002832EE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RentalDayNotifier;
+			productName = RentalDayNotifier;
+			productReference = 07C58BFA13B74001002832EE /* RentalDayNotifier.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		07C58BF113B74001002832EE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				ORGANIZATIONNAME = Kawaz;
+			};
+			buildConfigurationList = 07C58BF413B74001002832EE /* Build configuration list for PBXProject "RentalDayNotifier" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 07C58BEF13B74001002832EE;
+			productRefGroup = 07C58BFB13B74001002832EE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				07C58BF913B74001002832EE /* RentalDayNotifier */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		07C58BF813B74001002832EE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C58C0913B74001002832EE /* InfoPlist.strings in Resources */,
+				07C58C1213B74001002832EE /* MainWindow.xib in Resources */,
+				07C58C1B13B74002002832EE /* FirstView.xib in Resources */,
+				07C58C1E13B74002002832EE /* SecondView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		07C58BF613B74001002832EE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				07C58C0C13B74001002832EE /* main.m in Sources */,
+				07C58C0F13B74001002832EE /* RentalDayNotifierAppDelegate.m in Sources */,
+				07C58C1513B74002002832EE /* FirstViewController.m in Sources */,
+				07C58C1813B74002002832EE /* SecondViewController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		07C58C0713B74001002832EE /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07C58C0813B74001002832EE /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		07C58C1013B74001002832EE /* MainWindow.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07C58C1113B74001002832EE /* en */,
+			);
+			name = MainWindow.xib;
+			sourceTree = "<group>";
+		};
+		07C58C1913B74002002832EE /* FirstView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07C58C1A13B74002002832EE /* en */,
+			);
+			name = FirstView.xib;
+			sourceTree = "<group>";
+		};
+		07C58C1C13B74002002832EE /* SecondView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				07C58C1D13B74002002832EE /* en */,
+			);
+			name = SecondView.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		07C58C1F13B74002002832EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = DEBUG;
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		07C58C2013B74002002832EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_BIT)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = com.apple.compilers.llvmgcc42;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 4.3;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+			};
+			name = Release;
+		};
+		07C58C2213B74002002832EE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RentalDayNotifier/RentalDayNotifier-Prefix.pch";
+				INFOPLIST_FILE = "RentalDayNotifier/RentalDayNotifier-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		07C58C2313B74002002832EE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "RentalDayNotifier/RentalDayNotifier-Prefix.pch";
+				INFOPLIST_FILE = "RentalDayNotifier/RentalDayNotifier-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		07C58BF413B74001002832EE /* Build configuration list for PBXProject "RentalDayNotifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C58C1F13B74002002832EE /* Debug */,
+				07C58C2013B74002002832EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		07C58C2113B74002002832EE /* Build configuration list for PBXNativeTarget "RentalDayNotifier" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				07C58C2213B74002002832EE /* Debug */,
+				07C58C2313B74002002832EE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 07C58BF113B74001002832EE /* Project object */;
+}
