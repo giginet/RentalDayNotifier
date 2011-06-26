@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0723E58813B7486700DECC2C /* NotifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0723E58613B7486700DECC2C /* NotifyViewController.m */; };
+		0723E58913B7486700DECC2C /* NotifyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0723E58713B7486700DECC2C /* NotifyView.xib */; };
+		0723E59613B7491400DECC2C /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0723E59413B7491300DECC2C /* AddViewController.m */; };
+		0723E59C13B7492000DECC2C /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0723E59A13B7492000DECC2C /* SettingView.xib */; };
+		0723E5A013B7496600DECC2C /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0723E59E13B7496600DECC2C /* InfoViewController.m */; };
+		0723E5A113B7496600DECC2C /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0723E59F13B7496600DECC2C /* InfoView.xib */; };
+		0723E5A413B74B0200DECC2C /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0723E5A313B74B0200DECC2C /* SettingViewController.m */; };
+		0723E5A613B74B3100DECC2C /* AddView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0723E5A513B74B3100DECC2C /* AddView.xib */; };
+		0723E5AA13B74BAE00DECC2C /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0723E5A813B74BAE00DECC2C /* CalendarViewController.m */; };
+		0723E5AB13B74BAE00DECC2C /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0723E5A913B74BAE00DECC2C /* CalendarView.xib */; };
 		07C58BFF13B74001002832EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C58BFE13B74001002832EE /* UIKit.framework */; };
 		07C58C0113B74001002832EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C58C0013B74001002832EE /* Foundation.framework */; };
 		07C58C0313B74001002832EE /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C58C0213B74001002832EE /* CoreGraphics.framework */; };
@@ -21,20 +31,35 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0723E58513B7486700DECC2C /* NotifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyViewController.h; sourceTree = "<group>"; };
+		0723E58613B7486700DECC2C /* NotifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyViewController.m; sourceTree = "<group>"; };
+		0723E58713B7486700DECC2C /* NotifyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotifyView.xib; sourceTree = "<group>"; };
+		0723E59313B7491300DECC2C /* AddViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddViewController.h; sourceTree = "<group>"; };
+		0723E59413B7491300DECC2C /* AddViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddViewController.m; sourceTree = "<group>"; };
+		0723E59A13B7492000DECC2C /* SettingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingView.xib; sourceTree = "<group>"; };
+		0723E59D13B7496600DECC2C /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
+		0723E59E13B7496600DECC2C /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoViewController.m; sourceTree = "<group>"; };
+		0723E59F13B7496600DECC2C /* InfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = "<group>"; };
+		0723E5A213B74B0200DECC2C /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingViewController.h; path = RentalDayNotifier/SettingViewController.h; sourceTree = "<group>"; };
+		0723E5A313B74B0200DECC2C /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingViewController.m; path = RentalDayNotifier/SettingViewController.m; sourceTree = "<group>"; };
+		0723E5A513B74B3100DECC2C /* AddView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddView.xib; sourceTree = "<group>"; };
+		0723E5A713B74BAE00DECC2C /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		0723E5A813B74BAE00DECC2C /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
+		0723E5A913B74BAE00DECC2C /* CalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
 		07C58BFA13B74001002832EE /* RentalDayNotifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentalDayNotifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		07C58BFE13B74001002832EE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		07C58C0013B74001002832EE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		07C58C0213B74001002832EE /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		07C58C0613B74001002832EE /* RentalDayNotifier-Info.plist */ = {isa = PBXFileReference; path = "RentalDayNotifier-Info.plist"; sourceTree = "<group>"; };
+		07C58C0613B74001002832EE /* RentalDayNotifier-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "RentalDayNotifier-Info.plist"; sourceTree = "<group>"; };
 		07C58C0813B74001002832EE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		07C58C0A13B74001002832EE /* RentalDayNotifier-Prefix.pch */ = {isa = PBXFileReference; path = "RentalDayNotifier-Prefix.pch"; sourceTree = "<group>"; };
+		07C58C0A13B74001002832EE /* RentalDayNotifier-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RentalDayNotifier-Prefix.pch"; sourceTree = "<group>"; };
 		07C58C0B13B74001002832EE /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		07C58C0D13B74001002832EE /* RentalDayNotifierAppDelegate.h */ = {isa = PBXFileReference; path = RentalDayNotifierAppDelegate.h; sourceTree = "<group>"; };
+		07C58C0D13B74001002832EE /* RentalDayNotifierAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RentalDayNotifierAppDelegate.h; sourceTree = "<group>"; };
 		07C58C0E13B74001002832EE /* RentalDayNotifierAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RentalDayNotifierAppDelegate.m; sourceTree = "<group>"; };
 		07C58C1113B74001002832EE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/MainWindow.xib; sourceTree = "<group>"; };
-		07C58C1313B74002002832EE /* FirstViewController.h */ = {isa = PBXFileReference; path = FirstViewController.h; sourceTree = "<group>"; };
+		07C58C1313B74002002832EE /* FirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FirstViewController.h; sourceTree = "<group>"; };
 		07C58C1413B74002002832EE /* FirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FirstViewController.m; sourceTree = "<group>"; };
-		07C58C1613B74002002832EE /* SecondViewController.h */ = {isa = PBXFileReference; path = SecondViewController.h; sourceTree = "<group>"; };
+		07C58C1613B74002002832EE /* SecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SecondViewController.h; sourceTree = "<group>"; };
 		07C58C1713B74002002832EE /* SecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SecondViewController.m; sourceTree = "<group>"; };
 		07C58C1A13B74002002832EE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/FirstView.xib; sourceTree = "<group>"; };
 		07C58C1D13B74002002832EE /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/SecondView.xib; sourceTree = "<group>"; };
@@ -54,6 +79,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0723E58313B7484900DECC2C /* Notify */ = {
+			isa = PBXGroup;
+			children = (
+				0723E58513B7486700DECC2C /* NotifyViewController.h */,
+				0723E58613B7486700DECC2C /* NotifyViewController.m */,
+				0723E58713B7486700DECC2C /* NotifyView.xib */,
+			);
+			name = Notify;
+			sourceTree = "<group>";
+		};
+		0723E58A13B7487000DECC2C /* Calendar */ = {
+			isa = PBXGroup;
+			children = (
+				0723E5A713B74BAE00DECC2C /* CalendarViewController.h */,
+				0723E5A813B74BAE00DECC2C /* CalendarViewController.m */,
+				0723E5A913B74BAE00DECC2C /* CalendarView.xib */,
+			);
+			name = Calendar;
+			sourceTree = "<group>";
+		};
+		0723E59013B748B700DECC2C /* Add */ = {
+			isa = PBXGroup;
+			children = (
+				0723E59313B7491300DECC2C /* AddViewController.h */,
+				0723E59413B7491300DECC2C /* AddViewController.m */,
+				0723E5A513B74B3100DECC2C /* AddView.xib */,
+			);
+			name = Add;
+			sourceTree = "<group>";
+		};
+		0723E59113B748D000DECC2C /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				0723E5A213B74B0200DECC2C /* SettingViewController.h */,
+				0723E5A313B74B0200DECC2C /* SettingViewController.m */,
+				0723E59A13B7492000DECC2C /* SettingView.xib */,
+			);
+			name = Setting;
+			path = ..;
+			sourceTree = "<group>";
+		};
+		0723E59213B748E000DECC2C /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				0723E59D13B7496600DECC2C /* InfoViewController.h */,
+				0723E59E13B7496600DECC2C /* InfoViewController.m */,
+				0723E59F13B7496600DECC2C /* InfoView.xib */,
+			);
+			name = Info;
+			sourceTree = "<group>";
+		};
 		07C58BEF13B74001002832EE = {
 			isa = PBXGroup;
 			children = (
@@ -84,6 +160,11 @@
 		07C58C0413B74001002832EE /* RentalDayNotifier */ = {
 			isa = PBXGroup;
 			children = (
+				0723E59013B748B700DECC2C /* Add */,
+				0723E58313B7484900DECC2C /* Notify */,
+				0723E58A13B7487000DECC2C /* Calendar */,
+				0723E59113B748D000DECC2C /* Setting */,
+				0723E59213B748E000DECC2C /* Info */,
 				07C58C0D13B74001002832EE /* RentalDayNotifierAppDelegate.h */,
 				07C58C0E13B74001002832EE /* RentalDayNotifierAppDelegate.m */,
 				07C58C1013B74001002832EE /* MainWindow.xib */,
@@ -163,6 +244,11 @@
 				07C58C1213B74001002832EE /* MainWindow.xib in Resources */,
 				07C58C1B13B74002002832EE /* FirstView.xib in Resources */,
 				07C58C1E13B74002002832EE /* SecondView.xib in Resources */,
+				0723E58913B7486700DECC2C /* NotifyView.xib in Resources */,
+				0723E59C13B7492000DECC2C /* SettingView.xib in Resources */,
+				0723E5A113B7496600DECC2C /* InfoView.xib in Resources */,
+				0723E5A613B74B3100DECC2C /* AddView.xib in Resources */,
+				0723E5AB13B74BAE00DECC2C /* CalendarView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -177,6 +263,11 @@
 				07C58C0F13B74001002832EE /* RentalDayNotifierAppDelegate.m in Sources */,
 				07C58C1513B74002002832EE /* FirstViewController.m in Sources */,
 				07C58C1813B74002002832EE /* SecondViewController.m in Sources */,
+				0723E58813B7486700DECC2C /* NotifyViewController.m in Sources */,
+				0723E59613B7491400DECC2C /* AddViewController.m in Sources */,
+				0723E5A013B7496600DECC2C /* InfoViewController.m in Sources */,
+				0723E5A413B74B0200DECC2C /* SettingViewController.m in Sources */,
+				0723E5AA13B74BAE00DECC2C /* CalendarViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -297,6 +388,7 @@
 				07C58C2313B74002002832EE /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
