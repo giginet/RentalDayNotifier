@@ -7,6 +7,7 @@
 //
 
 #import "AddViewController.h"
+#import "IconToggleViewController.h"
 
 
 @implementation AddViewController
@@ -56,6 +57,8 @@
     int section = indexPath.section;
     cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     if(section == 0){
+      IconToggleViewController* tvc = [[[IconToggleViewController alloc] initWithNibName:@"AddIconToggle" bundle:nil] autorelease];
+      [cell addSubview:tvc.view];
     }else if(section == 1){
     }else if(section == 2){
     }else if(section == 3){
@@ -128,6 +131,10 @@
    [self.navigationController pushViewController:detailViewController animated:YES];
    [detailViewController release];
    */
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+  return 100;
 }
 
 @end
