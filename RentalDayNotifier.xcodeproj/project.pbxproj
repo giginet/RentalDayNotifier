@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		0710D05113C5D0E600660A94 /* IconToggleViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0710D05013C5D0E600660A94 /* IconToggleViewController.m */; };
 		0723E58813B7486700DECC2C /* NotifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0723E58613B7486700DECC2C /* NotifyViewController.m */; };
 		0723E58913B7486700DECC2C /* NotifyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0723E58713B7486700DECC2C /* NotifyView.xib */; };
 		0723E59613B7491400DECC2C /* AddViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0723E59413B7491300DECC2C /* AddViewController.m */; };
@@ -19,10 +18,9 @@
 		0723E5AA13B74BAE00DECC2C /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0723E5A813B74BAE00DECC2C /* CalendarViewController.m */; };
 		0723E5AB13B74BAE00DECC2C /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0723E5A913B74BAE00DECC2C /* CalendarView.xib */; };
 		073E2C2113BC4B870094B1C3 /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 073E2C2013BC4B860094B1C3 /* Notification.m */; };
+		0754B70213C80146002E68B0 /* AddIconToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0754B70113C80146002E68B0 /* AddIconToggle.m */; };
 		0765ACD413C6630B001B03F8 /* AddTableCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765ACD313C6630B001B03F8 /* AddTableCellViewController.m */; };
-		0765ACD813C6AA79001B03F8 /* AddReturnCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765ACD713C6AA79001B03F8 /* AddReturnCellViewController.m */; };
 		0797740513C4B85D00DDE138 /* AddTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0797740313C4B85D00DDE138 /* AddTableCell.xib */; };
-		0797740813C4B9F600DDE138 /* AddIconToggle.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0797740713C4B9F600DDE138 /* AddIconToggle.xib */; };
 		0797742313C4BBC100DDE138 /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 0797740B13C4BBC100DDE138 /* bell.png */; };
 		0797742413C4BBC100DDE138 /* bell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0797740C13C4BBC100DDE138 /* bell@2x.png */; };
 		0797742513C4BBC100DDE138 /* book_off.png in Resources */ = {isa = PBXBuildFile; fileRef = 0797740D13C4BBC100DDE138 /* book_off.png */; };
@@ -47,7 +45,6 @@
 		0797743813C4BBC100DDE138 /* on@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0797742013C4BBC100DDE138 /* on@2x.png */; };
 		0797743913C4BBC100DDE138 /* return.png in Resources */ = {isa = PBXBuildFile; fileRef = 0797742113C4BBC100DDE138 /* return.png */; };
 		0797743A13C4BBC100DDE138 /* return@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0797742213C4BBC100DDE138 /* return@2x.png */; };
-		0797743C13C4C1A100DDE138 /* AddReturnCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0797743B13C4C1A100DDE138 /* AddReturnCell.xib */; };
 		0797743F13C4C28900DDE138 /* UIToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0797743E13C4C28900DDE138 /* UIToggle.m */; };
 		07C58BFF13B74001002832EE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C58BFE13B74001002832EE /* UIKit.framework */; };
 		07C58C0113B74001002832EE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C58C0013B74001002832EE /* Foundation.framework */; };
@@ -63,8 +60,6 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0710D04F13C5D0E600660A94 /* IconToggleViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IconToggleViewController.h; sourceTree = "<group>"; };
-		0710D05013C5D0E600660A94 /* IconToggleViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IconToggleViewController.m; sourceTree = "<group>"; };
 		0723E58513B7486700DECC2C /* NotifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyViewController.h; sourceTree = "<group>"; };
 		0723E58613B7486700DECC2C /* NotifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyViewController.m; sourceTree = "<group>"; };
 		0723E58713B7486700DECC2C /* NotifyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotifyView.xib; sourceTree = "<group>"; };
@@ -82,12 +77,11 @@
 		0723E5A913B74BAE00DECC2C /* CalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
 		073E2C1F13BC4B860094B1C3 /* Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notification.h; sourceTree = "<group>"; };
 		073E2C2013BC4B860094B1C3 /* Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notification.m; sourceTree = "<group>"; };
-		0765ACD213C6630B001B03F8 /* AddTableCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = AddTableCellViewController.h; sourceTree = "<group>"; };
+		0754B70013C80146002E68B0 /* AddIconToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddIconToggle.h; sourceTree = "<group>"; };
+		0754B70113C80146002E68B0 /* AddIconToggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddIconToggle.m; sourceTree = "<group>"; };
+		0765ACD213C6630B001B03F8 /* AddTableCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTableCellViewController.h; sourceTree = "<group>"; };
 		0765ACD313C6630B001B03F8 /* AddTableCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTableCellViewController.m; sourceTree = "<group>"; };
-		0765ACD613C6AA79001B03F8 /* AddReturnCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = AddReturnCellViewController.h; sourceTree = "<group>"; };
-		0765ACD713C6AA79001B03F8 /* AddReturnCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddReturnCellViewController.m; sourceTree = "<group>"; };
 		0797740313C4B85D00DDE138 /* AddTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddTableCell.xib; sourceTree = "<group>"; };
-		0797740713C4B9F600DDE138 /* AddIconToggle.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddIconToggle.xib; sourceTree = "<group>"; };
 		0797740B13C4BBC100DDE138 /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
 		0797740C13C4BBC100DDE138 /* bell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bell@2x.png"; sourceTree = "<group>"; };
 		0797740D13C4BBC100DDE138 /* book_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = book_off.png; sourceTree = "<group>"; };
@@ -112,7 +106,6 @@
 		0797742013C4BBC100DDE138 /* on@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "on@2x.png"; sourceTree = "<group>"; };
 		0797742113C4BBC100DDE138 /* return.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = return.png; sourceTree = "<group>"; };
 		0797742213C4BBC100DDE138 /* return@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "return@2x.png"; sourceTree = "<group>"; };
-		0797743B13C4C1A100DDE138 /* AddReturnCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddReturnCell.xib; sourceTree = "<group>"; };
 		0797743D13C4C28900DDE138 /* UIToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UIToggle.h; sourceTree = "<group>"; };
 		0797743E13C4C28900DDE138 /* UIToggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UIToggle.m; sourceTree = "<group>"; };
 		07C58BFA13B74001002832EE /* RentalDayNotifier.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RentalDayNotifier.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -177,12 +170,8 @@
 				0797740313C4B85D00DDE138 /* AddTableCell.xib */,
 				0765ACD213C6630B001B03F8 /* AddTableCellViewController.h */,
 				0765ACD313C6630B001B03F8 /* AddTableCellViewController.m */,
-				0797740713C4B9F600DDE138 /* AddIconToggle.xib */,
-				0710D04F13C5D0E600660A94 /* IconToggleViewController.h */,
-				0710D05013C5D0E600660A94 /* IconToggleViewController.m */,
-				0797743B13C4C1A100DDE138 /* AddReturnCell.xib */,
-				0765ACD613C6AA79001B03F8 /* AddReturnCellViewController.h */,
-				0765ACD713C6AA79001B03F8 /* AddReturnCellViewController.m */,
+				0754B70013C80146002E68B0 /* AddIconToggle.h */,
+				0754B70113C80146002E68B0 /* AddIconToggle.m */,
 				0797743D13C4C28900DDE138 /* UIToggle.h */,
 				0797743E13C4C28900DDE138 /* UIToggle.m */,
 			);
@@ -372,7 +361,6 @@
 				0723E5A613B74B3100DECC2C /* AddView.xib in Resources */,
 				0723E5AB13B74BAE00DECC2C /* CalendarView.xib in Resources */,
 				0797740513C4B85D00DDE138 /* AddTableCell.xib in Resources */,
-				0797740813C4B9F600DDE138 /* AddIconToggle.xib in Resources */,
 				0797742313C4BBC100DDE138 /* bell.png in Resources */,
 				0797742413C4BBC100DDE138 /* bell@2x.png in Resources */,
 				0797742513C4BBC100DDE138 /* book_off.png in Resources */,
@@ -397,7 +385,6 @@
 				0797743813C4BBC100DDE138 /* on@2x.png in Resources */,
 				0797743913C4BBC100DDE138 /* return.png in Resources */,
 				0797743A13C4BBC100DDE138 /* return@2x.png in Resources */,
-				0797743C13C4C1A100DDE138 /* AddReturnCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,9 +406,8 @@
 				0723E5AA13B74BAE00DECC2C /* CalendarViewController.m in Sources */,
 				073E2C2113BC4B870094B1C3 /* Notification.m in Sources */,
 				0797743F13C4C28900DDE138 /* UIToggle.m in Sources */,
-				0710D05113C5D0E600660A94 /* IconToggleViewController.m in Sources */,
 				0765ACD413C6630B001B03F8 /* AddTableCellViewController.m in Sources */,
-				0765ACD813C6AA79001B03F8 /* AddReturnCellViewController.m in Sources */,
+				0754B70213C80146002E68B0 /* AddIconToggle.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

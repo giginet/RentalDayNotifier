@@ -15,7 +15,9 @@
   NSString* offImage_;
 }
 
+- (void)setOnImage:(NSString*)on offImage:(NSString*)off;
+
 @property(readwrite) BOOL toggle;
-@property(readwrite, retain) NSString* onImage;
-@property(readwrite, retain) NSString* offImage;
+@property(readwrite, copy) NSString* onImage;
+@property(readwrite, copy) NSString* offImage;
 @end

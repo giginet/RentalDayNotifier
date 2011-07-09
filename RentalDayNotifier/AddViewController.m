@@ -7,35 +7,11 @@
 //
 
 #import "AddViewController.h"
-#import "IconToggleViewController.h"
 #import "AddTableCellViewController.h"
-#import "AddReturnCellViewController.h"
+#import "UIToggle.h"
+#import "AddIconToggle.h"
 
 @implementation AddViewController
-
-- (id)initWithStyle:(UITableViewStyle)style
-{
-  self = [super initWithStyle:style];
-  if (self) {
-    // Custom initialization
-  }
-  return self;
-}
-
-- (void)dealloc
-{
-  [super dealloc];
-}
-
-- (void)didReceiveMemoryWarning
-{
-  // Releases the view if it doesn't have a superview.
-  [super didReceiveMemoryWarning];
-  
-  // Release any cached data, images, etc that aren't in use.
-}
-
-#pragma mark - View lifecycle
 
 - (void)viewDidLoad{
   self.view.backgroundColor = [UIColor blackColor];
@@ -58,9 +34,18 @@
   if (cell == nil) {
     int section = indexPath.section;
     cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
+    cell.selectionStyle = UITableViewCellSelectionStyleNone;
     if(section == 0){
-      IconToggleViewController* tvc = [[[IconToggleViewController alloc] initWithNibName:@"AddIconToggle" bundle:nil] autorelease];
-      [cell addSubview:tvc.view];
+      NSString* icons[] = {@"book", @"movie", @"dvd"};
+      NSString* labels[] = {@"BOOK", @"MOVIE", @"MUSIC"};
+      for(int i=0;i<3;++i){
+        AddIconToggle* kind = [[[AddIconToggle alloc] initWithFrame:CGRectMake(20+70*i, 20, 70, 70)] autorelease];
+        [kind.toggle setOnImage:[NSString stringWithFormat:@"%@_on.png", icons[i]] 
+                       offImage:[NSString stringWithFormat:@"%@_off.png", icons[i]]];
+        kind.label.text = labels[i];
+        [cell addSubview:kind];
+      }
+      cell.backgroundColor = [UIColor blackColor];
     }else if(section == 1){
       AddTableCellViewController* vc = [[[AddTableCellViewController alloc] initWithNibName:@"AddTableCell" bundle:nil] autorelease];
       cell = (UITableViewCell*)vc.view;
@@ -68,11 +53,13 @@
       AddTableCellViewController* vc = [[[AddTableCellViewController alloc] initWithNibName:@"AddTableCell" bundle:nil] autorelease];
       cell = (UITableViewCell*)vc.view;
     }else if(section == 3){
-      AddReturnCellViewController* vc = [[[AddReturnCellViewController alloc] initWithNibName:@"AddReturnCell" bundle:nil] autorelease];
+      AddTableCellViewController* vc = [[[AddTableCellViewController alloc] initWithNibName:@"AddTableCell" bundle:nil] autorelease];
       cell = (UITableViewCell*)vc.view;
+      UIToggle* toggle = [[[UIToggle alloc] initWithFrame:CGRectMake(40, 20, 50, 50)] autorelease];
+      [toggle setOnImage:@"on.png" offImage:@"off.png"];
+      [cell addSubview:toggle];
     }else if(section == 4){
       // 備考欄
-      cell.selectionStyle = UITableViewCellSelectionStyleNone;
       UITextField* txf = [[[UITextField alloc] initWithFrame:CGRectMake(12, 0, 296, 75)] autorelease];
       txf.borderStyle = UITextBorderStyleRoundedRect;
       txf.placeholder = @"備考";

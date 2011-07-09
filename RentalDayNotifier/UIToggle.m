@@ -9,7 +9,7 @@
 #import "UIToggle.h"
 
 @interface UIToggle()
-- (void)toggleSwitch;
+- (void)toggleSwitch:(id)sender;
 @end
 
 @implementation UIToggle
@@ -19,12 +19,18 @@
   self = [super initWithFrame:frame];
   if(self){
     toggle_ = NO;
+    [self addTarget:self action:@selector(toggleSwitch:) forControlEvents:UIControlEventTouchUpInside];
   }
   return self;
 }
 
 - (BOOL)toggle{
   return toggle_;
+}
+
+- (void)setOnImage:(NSString *)on offImage:(NSString *)off{
+  self.onImage = on;
+  self.offImage = off;
 }
 
 - (void)setToggle:(BOOL)toggle{
@@ -35,7 +41,31 @@
   [self setBackgroundImage:pressImage forState:UIControlStateSelected];
 }
 
-- (void)toggleSwitch{
+- (void)setOnImage:(NSString *)onImage{
+  onImage_ = [[NSString stringWithString:onImage] retain];
+  if(toggle_){
+    [self setBackgroundImage:[UIImage imageNamed:onImage] forState:UIControlStateNormal];
+    [self setBackgroundImage:[UIImage imageNamed:onImage] forState:UIControlStateSelected];
+  }
+}
+
+- (NSString*)onImage{
+  return [NSString stringWithString:onImage_];
+}
+
+- (void)setOffImage:(NSString *)offImage{
+  offImage_ = [[NSString stringWithString:offImage] retain];
+  if(!toggle_){
+    [self setBackgroundImage:[UIImage imageNamed:offImage] forState:UIControlStateNormal];
+    [self setBackgroundImage:[UIImage imageNamed:offImage] forState:UIControlStateSelected];
+  }
+}
+
+- (NSString*)offImage{
+  return [NSString stringWithString:offImage_];
+}
+
+- (void)toggleSwitch:(id)sender{
   self.toggle = !toggle_;
 }
 
