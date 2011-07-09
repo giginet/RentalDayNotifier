@@ -15,6 +15,11 @@
 
 @synthesize tabBarController=_tabBarController;
 
+- (void)applicationDidFinishLaunching:(UIApplication *)application{
+  NSUserDefaults* ud = [NSUserDefaults standardUserDefaults];
+  NSDictionary* setting = [NSDictionary dictionaryWithObjectsAndKeys:@"", @"", @"", @"", nil];
+}
+
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
   // Override point for customization after application launch.

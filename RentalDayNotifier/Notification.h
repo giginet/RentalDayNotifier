@@ -7,21 +7,22 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "RelativeDateTime.h"
 // レンタル通知モデル
 
 @interface Notification : NSObject <NSCoding>{
   BOOL alertEnable_;     // 通知が有効かどうか
   int rentalPeriod_;     // 何泊レンタルしたか
   NSDate* rentalDay_;    // レンタル日
-  NSDate* alertTime_;    // 通知日時
   NSIndexSet* kinds_;    // レンタルしたモノの種類を格納
   NSString* note_;       // 備考
+  RelativeDateTime* alertTime_;    // 通知日時
 }
 
 @property(readwrite) BOOL alertEnable;
 @property(readwrite) int rentalPeriod;
 @property(readwrite, retain) NSDate* rentalDay;
-@property(readwrite, retain) NSDate* alertTime;
 @property(readwrite, retain) NSIndexSet* kinds;
 @property(readwrite, retain) NSString* note;
+@property(readwrite, assign) RelativeDateTime* alertTime;
 @end

@@ -26,9 +26,9 @@
 
 - (void)dealloc{
   [rentalDay_ release];
-  [alertTime_ release];
   [kinds_ release];
   [note_ release];
+  [alertTime_ release];
   [super dealloc];
 }
 

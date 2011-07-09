@@ -20,6 +20,8 @@
 		073E2C2113BC4B870094B1C3 /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 073E2C2013BC4B860094B1C3 /* Notification.m */; };
 		0754B70213C80146002E68B0 /* AddIconToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0754B70113C80146002E68B0 /* AddIconToggle.m */; };
 		0765ACD413C6630B001B03F8 /* AddTableCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765ACD313C6630B001B03F8 /* AddTableCellViewController.m */; };
+		077E478A13C9188500BB3BF3 /* DatePatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 077E478913C9188400BB3BF3 /* DatePatch.m */; };
+		077E478E13C9195800BB3BF3 /* RelativeDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 077E478D13C9195800BB3BF3 /* RelativeDateTime.m */; };
 		0797740513C4B85D00DDE138 /* AddTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0797740313C4B85D00DDE138 /* AddTableCell.xib */; };
 		0797742313C4BBC100DDE138 /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 0797740B13C4BBC100DDE138 /* bell.png */; };
 		0797742413C4BBC100DDE138 /* bell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0797740C13C4BBC100DDE138 /* bell@2x.png */; };
@@ -81,6 +83,10 @@
 		0754B70113C80146002E68B0 /* AddIconToggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddIconToggle.m; sourceTree = "<group>"; };
 		0765ACD213C6630B001B03F8 /* AddTableCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddTableCellViewController.h; sourceTree = "<group>"; };
 		0765ACD313C6630B001B03F8 /* AddTableCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddTableCellViewController.m; sourceTree = "<group>"; };
+		077E478813C9188400BB3BF3 /* DatePatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePatch.h; sourceTree = "<group>"; };
+		077E478913C9188400BB3BF3 /* DatePatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePatch.m; sourceTree = "<group>"; };
+		077E478C13C9195800BB3BF3 /* RelativeDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelativeDateTime.h; sourceTree = "<group>"; };
+		077E478D13C9195800BB3BF3 /* RelativeDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelativeDateTime.m; sourceTree = "<group>"; };
 		0797740313C4B85D00DDE138 /* AddTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddTableCell.xib; sourceTree = "<group>"; };
 		0797740B13C4BBC100DDE138 /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
 		0797740C13C4BBC100DDE138 /* bell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bell@2x.png"; sourceTree = "<group>"; };
@@ -199,6 +205,26 @@
 			name = Info;
 			sourceTree = "<group>";
 		};
+		077E478013C9020C00BB3BF3 /* models */ = {
+			isa = PBXGroup;
+			children = (
+				073E2C1F13BC4B860094B1C3 /* Notification.h */,
+				073E2C2013BC4B860094B1C3 /* Notification.m */,
+				077E478C13C9195800BB3BF3 /* RelativeDateTime.h */,
+				077E478D13C9195800BB3BF3 /* RelativeDateTime.m */,
+			);
+			name = models;
+			sourceTree = "<group>";
+		};
+		077E478B13C9188B00BB3BF3 /* util */ = {
+			isa = PBXGroup;
+			children = (
+				077E478813C9188400BB3BF3 /* DatePatch.h */,
+				077E478913C9188400BB3BF3 /* DatePatch.m */,
+			);
+			name = util;
+			sourceTree = "<group>";
+		};
 		0797740913C4BB6200DDE138 /* Resource */ = {
 			isa = PBXGroup;
 			children = (
@@ -268,6 +294,8 @@
 		07C58C0413B74001002832EE /* RentalDayNotifier */ = {
 			isa = PBXGroup;
 			children = (
+				077E478B13C9188B00BB3BF3 /* util */,
+				077E478013C9020C00BB3BF3 /* models */,
 				0797740913C4BB6200DDE138 /* Resource */,
 				0723E59013B748B700DECC2C /* Add */,
 				0723E58313B7484900DECC2C /* Notify */,
@@ -284,8 +312,6 @@
 				07C58C1913B74002002832EE /* FirstView.xib */,
 				07C58C1C13B74002002832EE /* SecondView.xib */,
 				07C58C0513B74001002832EE /* Supporting Files */,
-				073E2C1F13BC4B860094B1C3 /* Notification.h */,
-				073E2C2013BC4B860094B1C3 /* Notification.m */,
 			);
 			path = RentalDayNotifier;
 			sourceTree = "<group>";
@@ -408,6 +434,8 @@
 				0797743F13C4C28900DDE138 /* UIToggle.m in Sources */,
 				0765ACD413C6630B001B03F8 /* AddTableCellViewController.m in Sources */,
 				0754B70213C80146002E68B0 /* AddIconToggle.m in Sources */,
+				077E478A13C9188500BB3BF3 /* DatePatch.m in Sources */,
+				077E478E13C9195800BB3BF3 /* RelativeDateTime.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

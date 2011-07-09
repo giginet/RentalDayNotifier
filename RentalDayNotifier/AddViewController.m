@@ -60,9 +60,7 @@
       [cell addSubview:toggle];
     }else if(section == 4){
       // 備考欄
-      UITextField* txf = [[[UITextField alloc] initWithFrame:CGRectMake(12, 0, 296, 75)] autorelease];
-      txf.borderStyle = UITextBorderStyleRoundedRect;
-      txf.placeholder = @"備考";
+      UITextView* txf = [[[UITextView alloc] initWithFrame:CGRectMake(15, 10, 290, 80)] autorelease];
       [cell addSubview:txf];
     }
   }
