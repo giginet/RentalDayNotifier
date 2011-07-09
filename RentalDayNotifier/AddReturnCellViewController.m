@@ -1,15 +1,15 @@
 //
-//  AddReturnCell.m
+//  AddReturnCellViewController.m
 //  RentalDayNotifier
 //
 //  Created by giginet on 11/07/08.
 //  Copyright 2011 Kawaz. All rights reserved.
 //
 
-#import "AddReturnCell.h"
+#import "AddReturnCellViewController.h"
 
 
-@implementation AddReturnCell
+@implementation AddReturnCellViewController
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {

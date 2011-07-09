@@ -1,5 +1,5 @@
 //
-//  AddTableCell.h
+//  AddTableCellViewController.h
 //  RentalDayNotifier
 //
 //  Created by giginet on 11/07/08.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 
 
-@interface AddTableCell : UIViewController {
+@interface AddTableCellViewController : UIViewController {
   IBOutlet UILabel* mainLabel_;
   IBOutlet UILabel* subLabel_;
 }

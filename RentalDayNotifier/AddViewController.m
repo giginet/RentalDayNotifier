@@ -8,7 +8,8 @@
 
 #import "AddViewController.h"
 #import "IconToggleViewController.h"
-
+#import "AddTableCellViewController.h"
+#import "AddReturnCellViewController.h"
 
 @implementation AddViewController
 
@@ -38,6 +39,7 @@
 
 - (void)viewDidLoad{
   self.view.backgroundColor = [UIColor blackColor];
+  self.tableView.separatorColor = [UIColor blackColor];
   [super viewDidLoad];
 }
 
@@ -60,8 +62,14 @@
       IconToggleViewController* tvc = [[[IconToggleViewController alloc] initWithNibName:@"AddIconToggle" bundle:nil] autorelease];
       [cell addSubview:tvc.view];
     }else if(section == 1){
+      AddTableCellViewController* vc = [[[AddTableCellViewController alloc] initWithNibName:@"AddTableCell" bundle:nil] autorelease];
+      cell = (UITableViewCell*)vc.view;
     }else if(section == 2){
+      AddTableCellViewController* vc = [[[AddTableCellViewController alloc] initWithNibName:@"AddTableCell" bundle:nil] autorelease];
+      cell = (UITableViewCell*)vc.view;
     }else if(section == 3){
+      AddReturnCellViewController* vc = [[[AddReturnCellViewController alloc] initWithNibName:@"AddReturnCell" bundle:nil] autorelease];
+      cell = (UITableViewCell*)vc.view;
     }else if(section == 4){
       // 備考欄
       cell.selectionStyle = UITableViewCellSelectionStyleNone;
