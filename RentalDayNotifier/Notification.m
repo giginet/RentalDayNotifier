@@ -7,17 +7,22 @@
 //
 
 #import "Notification.h"
-
+#import "DatePatch.h"
 
 @implementation Notification
-@synthesize alertEnable=alertEnable_, rentalPeriod=rentalPeriod_, rentalDay=rentalDay_, alertTime=alertTime_, kinds=kinds_, note=note_;
+@synthesize alertEnable=alertEnable_, rentalPeriod=rentalPeriod_, rentalDay=rentalDay_, alertDateTime=alertDateTime_, kinds=kinds_, note=note_;
 
 - (id)init{
   if((self = [super init])){
+    NSUserDefaults* ud = [NSUserDefaults standardUserDefaults];
     alertEnable_ = NO;
     rentalPeriod_ = 7;
+    if([ud objectForKey:@"alertDateTime"]){
+      alertDateTime_ = [[ud objectForKey:@"alertDateTime"] retain];
+    }else{
+      alertDateTime_ = [[RelativeDateTime alloc] initWithDay:1 hour:10 andMinute:0];
+    }
     rentalDay_ = [[NSDate date] retain];
-    alertTime_ = [[NSDate date] retain];
     kinds_ = [[NSIndexSet alloc] init];
     note_ = [[NSString alloc] init];
   }
@@ -28,7 +33,7 @@
   [rentalDay_ release];
   [kinds_ release];
   [note_ release];
-  [alertTime_ release];
+  [alertDateTime_ release];
   [super dealloc];
 }
 
@@ -43,7 +48,7 @@
   [aCoder encodeObject:[NSNumber numberWithInt:rentalPeriod_] forKey:@"RENTALPERIOD"];
   [aCoder encodeObject:[NSNumber numberWithBool:alertEnable_] forKey:@"ALERTENABLE"];
   [aCoder encodeObject:rentalDay_ forKey:@"RENTALDAY"];
-  [aCoder encodeObject:alertTime_ forKey:@"ALERTTIME"];
+  [aCoder encodeObject:alertDateTime_ forKey:@"alertDateTime"];
   [aCoder encodeObject:kinds_ forKey:@"KINDS"];
   [aCoder encodeObject:note_ forKey:@"NOTE"];
 }
@@ -51,13 +56,25 @@
 - (id)initWithCoder:(NSCoder *)aDecoder{
   if( (self = [super init])){
     rentalDay_    = [[aDecoder decodeObjectForKey:@"RENTALDAY"] retain];
-    alertTime_    = [[aDecoder decodeObjectForKey:@"ALERTTIME"] retain];
+    alertDateTime_    = [[aDecoder decodeObjectForKey:@"alertDateTime"] retain];
     kinds_        = [[aDecoder decodeObjectForKey:@"KINDS"] retain];
     note_         = [[aDecoder decodeObjectForKey:@"NOTE"] retain];
     alertEnable_  = [(NSNumber*)[aDecoder decodeObjectForKey:@"ALERTENABLE"] boolValue];
     rentalPeriod_ = [(NSNumber*)[aDecoder decodeObjectForKey:@"RENTALPERIOD"] intValue];
   }
   return self;
+}
+
+- (NSString*)rentalDayDescription{
+  return [rentalDay_ dayDescription];
+}
+
+- (NSString*)periodDescription{
+  return [NSString stringWithFormat:@"%d泊%d日", rentalPeriod_, rentalPeriod_+1];
+}
+
+- (NSString*)alertDescription{
+  return [alertDateTime_ description];
 }
 
 @end

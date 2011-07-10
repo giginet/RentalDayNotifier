@@ -43,7 +43,7 @@
   }else if(day_ > 1){
     day = [NSString stringWithFormat:@"%d日後", day_];
   }
-  return [NSString stringWithFormat:@"%@ %2d:%2d", day, hour_, minute_];
+  return [NSString stringWithFormat:@"%@ %2.2d:%2.2d", day, hour_, minute_];
 }
 
 
@@ -58,7 +58,7 @@
 - (void)encodeWithCoder:(NSCoder *)aCoder{
   [aCoder encodeObject:[NSNumber numberWithInt:day_] forKey:@"DAY"];
   [aCoder encodeObject:[NSNumber numberWithInt:hour_] forKey:@"HOUR"];
-  [aCoder encodeObject:[NSNumber numberWithInt:hour_] forKey:@"MINUTE"];
+  [aCoder encodeObject:[NSNumber numberWithInt:minute_] forKey:@"MINUTE"];
 }
 
 - (id)initWithCoder:(NSCoder *)aDecoder{

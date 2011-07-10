@@ -14,4 +14,6 @@
   IBOutlet UILabel* subLabel_;
 }
 
+@property(readonly, assign) UILabel* mainLabel;
+@property(readonly, assign) UILabel* subLabel;
 @end

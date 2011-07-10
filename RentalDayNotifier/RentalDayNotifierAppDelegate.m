@@ -15,21 +15,10 @@
 
 @synthesize tabBarController=_tabBarController;
 
-- (void)applicationDidFinishLaunching:(UIApplication *)application{
-  NSUserDefaults* ud = [NSUserDefaults standardUserDefaults];
-  // 設定の初期値を定義してやる
-  RelativeDateTime* defaultRelative = [[[RelativeDateTime alloc] initWithDay:1 hour:10 andMinute:0] autorelease];
-  NSDictionary* setting = [NSDictionary dictionaryWithObjectsAndKeys:defaultRelative, @"closeDateTime",
-                           defaultRelative, @"alertDateTime", nil];
-}
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
-{
-  // Override point for customization after application launch.
-  // Add the tab bar controller's current view as a subview of the window
+- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
   self.window.rootViewController = self.tabBarController;
   [self.window makeKeyAndVisible];
-    return YES;
+  return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application
@@ -75,21 +64,21 @@
 {
   [_window release];
   [_tabBarController release];
-    [super dealloc];
+  [super dealloc];
 }
 
 /*
-// Optional UITabBarControllerDelegate method.
-- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
-{
-}
-*/
+ // Optional UITabBarControllerDelegate method.
+ - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
+ {
+ }
+ */
 
 /*
-// Optional UITabBarControllerDelegate method.
-- (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
-{
-}
-*/
+ // Optional UITabBarControllerDelegate method.
+ - (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
+ {
+ }
+ */
 
 @end

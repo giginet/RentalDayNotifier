@@ -19,6 +19,18 @@
   [super viewDidLoad];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+  if(!notification_){
+    notification_ = [[Notification alloc] init];
+  }
+  [super viewWillAppear:animated];
+}
+
+- (void)dealloc{
+  [notification_ release];
+  [super dealloc];
+}
+
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
   return 5;
 }
@@ -43,6 +55,8 @@
         [kind.toggle setOnImage:[NSString stringWithFormat:@"%@_on.png", icons[i]] 
                        offImage:[NSString stringWithFormat:@"%@_off.png", icons[i]]];
         kind.label.text = labels[i];
+        // その種類が含まれていたらONにする
+        [kind.toggle setToggle:[notification_.kinds containsIndex:i]];
         [cell addSubview:kind];
       }
       cell.backgroundColor = [UIColor blackColor];
@@ -50,20 +64,24 @@
       // 借りた日
       EditTableCellViewController* vc = [[[EditTableCellViewController alloc] initWithNibName:@"EditTableCell" bundle:nil] autorelease];
       cell = (UITableViewCell*)vc.view;
+      vc.mainLabel.text = [notification_ rentalDayDescription];
     }else if(section == 2){
       // レンタル期間
       EditTableCellViewController* vc = [[[EditTableCellViewController alloc] initWithNibName:@"EditTableCell" bundle:nil] autorelease];
       cell = (UITableViewCell*)vc.view;
+      vc.mainLabel.text = [notification_ periodDescription];
     }else if(section == 3){
       // 返却通知
       EditTableCellViewController* vc = [[[EditTableCellViewController alloc] initWithNibName:@"EditTableCell" bundle:nil] autorelease];
       cell = (UITableViewCell*)vc.view;
+      vc.mainLabel.text = [notification_ alertDescription];
       UIToggle* toggle = [[[UIToggle alloc] initWithFrame:CGRectMake(40, 20, 50, 50)] autorelease];
       [toggle setOnImage:@"on.png" offImage:@"off.png"];
       [cell addSubview:toggle];
     }else if(section == 4){
       // 備考欄
       UITextView* txf = [[[UITextView alloc] initWithFrame:CGRectMake(15, 10, 290, 80)] autorelease];
+      txf.text = notification_.note;
       [cell addSubview:txf];
     }
   }

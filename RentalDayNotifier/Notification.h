@@ -16,13 +16,17 @@
   NSDate* rentalDay_;    // レンタル日
   NSIndexSet* kinds_;    // レンタルしたモノの種類を格納
   NSString* note_;       // 備考
-  RelativeDateTime* alertTime_;    // 通知日時
+  RelativeDateTime* alertDateTime_;    // 通知日時
 }
+
+- (NSString*)rentalDayDescription;
+- (NSString*)periodDescription;
+- (NSString*)alertDescription;
 
 @property(readwrite) BOOL alertEnable;
 @property(readwrite) int rentalPeriod;
 @property(readwrite, retain) NSDate* rentalDay;
 @property(readwrite, retain) NSIndexSet* kinds;
 @property(readwrite, retain) NSString* note;
-@property(readwrite, assign) RelativeDateTime* alertTime;
+@property(readwrite, assign) RelativeDateTime* alertDateTime;
 @end
