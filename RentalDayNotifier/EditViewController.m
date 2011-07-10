@@ -1,17 +1,17 @@
 //
-//  AddViewController.m
+//  EditViewController.m
 //  RentalDayNotifier
 //
 //  Created by giginet on 11/06/26.
 //  Copyright 2011 Kawaz. All rights reserved.
 //
 
-#import "AddViewController.h"
-#import "AddTableCellViewController.h"
+#import "EditViewController.h"
+#import "EditTableCellViewController.h"
 #import "UIToggle.h"
-#import "AddIconToggle.h"
+#import "EditIconToggle.h"
 
-@implementation AddViewController
+@implementation EditViewController
 
 - (void)viewDidLoad{
   self.view.backgroundColor = [UIColor blackColor];
@@ -39,7 +39,7 @@
       NSString* icons[] = {@"book", @"movie", @"dvd"};
       NSString* labels[] = {@"BOOK", @"MOVIE", @"MUSIC"};
       for(int i=0;i<3;++i){
-        AddIconToggle* kind = [[[AddIconToggle alloc] initWithFrame:CGRectMake(20+70*i, 20, 70, 70)] autorelease];
+        EditIconToggle* kind = [[[EditIconToggle alloc] initWithFrame:CGRectMake(20+70*i, 20, 70, 70)] autorelease];
         [kind.toggle setOnImage:[NSString stringWithFormat:@"%@_on.png", icons[i]] 
                        offImage:[NSString stringWithFormat:@"%@_off.png", icons[i]]];
         kind.label.text = labels[i];
@@ -47,13 +47,16 @@
       }
       cell.backgroundColor = [UIColor blackColor];
     }else if(section == 1){
-      AddTableCellViewController* vc = [[[AddTableCellViewController alloc] initWithNibName:@"AddTableCell" bundle:nil] autorelease];
+      // 借りた日
+      EditTableCellViewController* vc = [[[EditTableCellViewController alloc] initWithNibName:@"EditTableCell" bundle:nil] autorelease];
       cell = (UITableViewCell*)vc.view;
     }else if(section == 2){
-      AddTableCellViewController* vc = [[[AddTableCellViewController alloc] initWithNibName:@"AddTableCell" bundle:nil] autorelease];
+      // レンタル期間
+      EditTableCellViewController* vc = [[[EditTableCellViewController alloc] initWithNibName:@"EditTableCell" bundle:nil] autorelease];
       cell = (UITableViewCell*)vc.view;
     }else if(section == 3){
-      AddTableCellViewController* vc = [[[AddTableCellViewController alloc] initWithNibName:@"AddTableCell" bundle:nil] autorelease];
+      // 返却通知
+      EditTableCellViewController* vc = [[[EditTableCellViewController alloc] initWithNibName:@"EditTableCell" bundle:nil] autorelease];
       cell = (UITableViewCell*)vc.view;
       UIToggle* toggle = [[[UIToggle alloc] initWithFrame:CGRectMake(40, 20, 50, 50)] autorelease];
       [toggle setOnImage:@"on.png" offImage:@"off.png"];

@@ -1,15 +1,15 @@
 //
-//  AddIconToggle.m
+//  EditIconToggle.m
 //  RentalDayNotifier
 //
 //  Created by giginet on 11/07/09.
 //  Copyright 2011 Kawaz. All rights reserved.
 //
 
-#import "AddIconToggle.h"
+#import "EditIconToggle.h"
 
 
-@implementation AddIconToggle
+@implementation EditIconToggle
 @synthesize toggle=toggle_, label=label_;
 
 - (id)initWithFrame:(CGRect)frame{

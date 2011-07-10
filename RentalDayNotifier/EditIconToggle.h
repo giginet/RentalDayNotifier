@@ -1,5 +1,5 @@
 //
-//  AddIconToggle.h
+//  EditIconToggle.h
 //  RentalDayNotifier
 //
 //  Created by giginet on 11/07/09.
@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "UIToggle.h"
 
-@interface AddIconToggle : UIView {
+@interface EditIconToggle : UIView {
   UIToggle* toggle_;
   UILabel* label_;
 }

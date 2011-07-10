@@ -7,7 +7,7 @@
 //
 
 #import "RentalDayNotifierAppDelegate.h"
-
+#import "RelativeDateTime.h"
 @implementation RentalDayNotifierAppDelegate
 
 
@@ -17,7 +17,10 @@
 
 - (void)applicationDidFinishLaunching:(UIApplication *)application{
   NSUserDefaults* ud = [NSUserDefaults standardUserDefaults];
-  NSDictionary* setting = [NSDictionary dictionaryWithObjectsAndKeys:@"", @"", @"", @"", nil];
+  // 設定の初期値を定義してやる
+  RelativeDateTime* defaultRelative = [[[RelativeDateTime alloc] initWithDay:1 hour:10 andMinute:0] autorelease];
+  NSDictionary* setting = [NSDictionary dictionaryWithObjectsAndKeys:defaultRelative, @"closeDateTime",
+                           defaultRelative, @"alertDateTime", nil];
 }
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
