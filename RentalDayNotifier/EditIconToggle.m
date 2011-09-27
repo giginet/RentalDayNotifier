@@ -19,9 +19,7 @@
     label_ = [[UILabel alloc] initWithFrame:CGRectMake(10, 50, 60, 20)];
     [self addSubview:toggle_];
     [self addSubview:label_];
-    label_.textColor = [UIColor whiteColor];
     label_.backgroundColor = [UIColor clearColor];
-    self.backgroundColor = [UIColor blackColor];
   }
   return self;
 }

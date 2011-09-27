@@ -14,8 +14,6 @@
 @implementation EditViewController
 
 - (void)viewDidLoad{
-  self.view.backgroundColor = [UIColor blackColor];
-  self.tableView.separatorColor = [UIColor blackColor];
   [super viewDidLoad];
 }
 
@@ -59,7 +57,6 @@
         [kind.toggle setToggle:[notification_.kinds containsIndex:i]];
         [cell addSubview:kind];
       }
-      cell.backgroundColor = [UIColor blackColor];
     }else if(section == 1){
       // 借りた日
       EditTableCellViewController* vc = [[[EditTableCellViewController alloc] initWithNibName:@"EditTableCell" bundle:nil] autorelease];

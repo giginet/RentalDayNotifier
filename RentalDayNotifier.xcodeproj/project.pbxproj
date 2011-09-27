@@ -18,6 +18,13 @@
 		0723E5AA13B74BAE00DECC2C /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0723E5A813B74BAE00DECC2C /* CalendarViewController.m */; };
 		0723E5AB13B74BAE00DECC2C /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0723E5A913B74BAE00DECC2C /* CalendarView.xib */; };
 		073E2C2113BC4B870094B1C3 /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 073E2C2013BC4B860094B1C3 /* Notification.m */; };
+		0745F8C61431C4A30084CD0B /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0745F8C51431C4A30084CD0B /* SenTestingKit.framework */; };
+		0745F8C71431C4A30084CD0B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C58BFE13B74001002832EE /* UIKit.framework */; };
+		0745F8C81431C4A30084CD0B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C58C0013B74001002832EE /* Foundation.framework */; };
+		0745F8C91431C4A30084CD0B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 07C58C0213B74001002832EE /* CoreGraphics.framework */; };
+		0745F8CF1431C4A30084CD0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0745F8CD1431C4A30084CD0B /* InfoPlist.strings */; };
+		0745F8D11431C4A30084CD0B /* LogicTest.h in Resources */ = {isa = PBXBuildFile; fileRef = 0745F8D01431C4A30084CD0B /* LogicTest.h */; };
+		0745F8D31431C4A30084CD0B /* LogicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745F8D21431C4A30084CD0B /* LogicTest.m */; };
 		0754B70213C80146002E68B0 /* EditIconToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0754B70113C80146002E68B0 /* EditIconToggle.m */; };
 		0765ACD413C6630B001B03F8 /* EditTableCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765ACD313C6630B001B03F8 /* EditTableCellViewController.m */; };
 		077E478A13C9188500BB3BF3 /* DatePatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 077E478913C9188400BB3BF3 /* DatePatch.m */; };
@@ -65,7 +72,7 @@
 		0723E58513B7486700DECC2C /* NotifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyViewController.h; sourceTree = "<group>"; };
 		0723E58613B7486700DECC2C /* NotifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyViewController.m; sourceTree = "<group>"; };
 		0723E58713B7486700DECC2C /* NotifyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotifyView.xib; sourceTree = "<group>"; };
-		0723E59313B7491300DECC2C /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = EditViewController.h; sourceTree = "<group>"; };
+		0723E59313B7491300DECC2C /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		0723E59413B7491300DECC2C /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		0723E59A13B7492000DECC2C /* SettingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingView.xib; sourceTree = "<group>"; };
 		0723E59D13B7496600DECC2C /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoViewController.h; sourceTree = "<group>"; };
@@ -79,9 +86,16 @@
 		0723E5A913B74BAE00DECC2C /* CalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
 		073E2C1F13BC4B860094B1C3 /* Notification.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notification.h; sourceTree = "<group>"; };
 		073E2C2013BC4B860094B1C3 /* Notification.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Notification.m; sourceTree = "<group>"; };
-		0754B70013C80146002E68B0 /* EditIconToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; path = EditIconToggle.h; sourceTree = "<group>"; };
+		0745F8C41431C4A30084CD0B /* LogicTest.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LogicTest.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		0745F8C51431C4A30084CD0B /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		0745F8CC1431C4A30084CD0B /* LogicTest-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LogicTest-Info.plist"; sourceTree = "<group>"; };
+		0745F8CE1431C4A30084CD0B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		0745F8D01431C4A30084CD0B /* LogicTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogicTest.h; sourceTree = "<group>"; };
+		0745F8D21431C4A30084CD0B /* LogicTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogicTest.m; sourceTree = "<group>"; };
+		0745F8D41431C4A30084CD0B /* LogicTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LogicTest-Prefix.pch"; sourceTree = "<group>"; };
+		0754B70013C80146002E68B0 /* EditIconToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditIconToggle.h; sourceTree = "<group>"; };
 		0754B70113C80146002E68B0 /* EditIconToggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditIconToggle.m; sourceTree = "<group>"; };
-		0765ACD213C6630B001B03F8 /* EditTableCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = EditTableCellViewController.h; sourceTree = "<group>"; };
+		0765ACD213C6630B001B03F8 /* EditTableCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTableCellViewController.h; sourceTree = "<group>"; };
 		0765ACD313C6630B001B03F8 /* EditTableCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTableCellViewController.m; sourceTree = "<group>"; };
 		077E478813C9188400BB3BF3 /* DatePatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePatch.h; sourceTree = "<group>"; };
 		077E478913C9188400BB3BF3 /* DatePatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePatch.m; sourceTree = "<group>"; };
@@ -134,6 +148,17 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
+		0745F8C01431C4A30084CD0B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0745F8C61431C4A30084CD0B /* SenTestingKit.framework in Frameworks */,
+				0745F8C71431C4A30084CD0B /* UIKit.framework in Frameworks */,
+				0745F8C81431C4A30084CD0B /* Foundation.framework in Frameworks */,
+				0745F8C91431C4A30084CD0B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07C58BF713B74001002832EE /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
@@ -147,27 +172,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		0723E58313B7484900DECC2C /* Notify */ = {
+		0723E58313B7484900DECC2C /* notify */ = {
 			isa = PBXGroup;
 			children = (
 				0723E58513B7486700DECC2C /* NotifyViewController.h */,
 				0723E58613B7486700DECC2C /* NotifyViewController.m */,
 				0723E58713B7486700DECC2C /* NotifyView.xib */,
 			);
-			name = Notify;
+			name = notify;
 			sourceTree = "<group>";
 		};
-		0723E58A13B7487000DECC2C /* Calendar */ = {
+		0723E58A13B7487000DECC2C /* calendar */ = {
 			isa = PBXGroup;
 			children = (
 				0723E5A713B74BAE00DECC2C /* CalendarViewController.h */,
 				0723E5A813B74BAE00DECC2C /* CalendarViewController.m */,
 				0723E5A913B74BAE00DECC2C /* CalendarView.xib */,
 			);
-			name = Calendar;
+			name = calendar;
 			sourceTree = "<group>";
 		};
-		0723E59013B748B700DECC2C /* Add */ = {
+		0723E59013B748B700DECC2C /* add */ = {
 			isa = PBXGroup;
 			children = (
 				0723E59313B7491300DECC2C /* EditViewController.h */,
@@ -181,28 +206,48 @@
 				0797743D13C4C28900DDE138 /* UIToggle.h */,
 				0797743E13C4C28900DDE138 /* UIToggle.m */,
 			);
-			name = Add;
+			name = add;
 			sourceTree = "<group>";
 		};
-		0723E59113B748D000DECC2C /* Setting */ = {
+		0723E59113B748D000DECC2C /* setting */ = {
 			isa = PBXGroup;
 			children = (
 				0723E5A213B74B0200DECC2C /* SettingViewController.h */,
 				0723E5A313B74B0200DECC2C /* SettingViewController.m */,
 				0723E59A13B7492000DECC2C /* SettingView.xib */,
 			);
-			name = Setting;
+			name = setting;
 			path = ..;
 			sourceTree = "<group>";
 		};
-		0723E59213B748E000DECC2C /* Info */ = {
+		0723E59213B748E000DECC2C /* info */ = {
 			isa = PBXGroup;
 			children = (
 				0723E59D13B7496600DECC2C /* InfoViewController.h */,
 				0723E59E13B7496600DECC2C /* InfoViewController.m */,
 				0723E59F13B7496600DECC2C /* InfoView.xib */,
 			);
-			name = Info;
+			name = info;
+			sourceTree = "<group>";
+		};
+		0745F8CA1431C4A30084CD0B /* LogicTest */ = {
+			isa = PBXGroup;
+			children = (
+				0745F8D01431C4A30084CD0B /* LogicTest.h */,
+				0745F8D21431C4A30084CD0B /* LogicTest.m */,
+				0745F8CB1431C4A30084CD0B /* Supporting Files */,
+			);
+			path = LogicTest;
+			sourceTree = "<group>";
+		};
+		0745F8CB1431C4A30084CD0B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				0745F8CC1431C4A30084CD0B /* LogicTest-Info.plist */,
+				0745F8CD1431C4A30084CD0B /* InfoPlist.strings */,
+				0745F8D41431C4A30084CD0B /* LogicTest-Prefix.pch */,
+			);
+			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		077E478013C9020C00BB3BF3 /* models */ = {
@@ -225,12 +270,12 @@
 			name = util;
 			sourceTree = "<group>";
 		};
-		0797740913C4BB6200DDE138 /* Resource */ = {
+		0797740913C4BB6200DDE138 /* resources */ = {
 			isa = PBXGroup;
 			children = (
 				0797740A13C4BBB700DDE138 /* Icon */,
 			);
-			name = Resource;
+			name = resources;
 			sourceTree = "<group>";
 		};
 		0797740A13C4BBB700DDE138 /* Icon */ = {
@@ -268,6 +313,7 @@
 			isa = PBXGroup;
 			children = (
 				07C58C0413B74001002832EE /* RentalDayNotifier */,
+				0745F8CA1431C4A30084CD0B /* LogicTest */,
 				07C58BFD13B74001002832EE /* Frameworks */,
 				07C58BFB13B74001002832EE /* Products */,
 			);
@@ -277,6 +323,7 @@
 			isa = PBXGroup;
 			children = (
 				07C58BFA13B74001002832EE /* RentalDayNotifier.app */,
+				0745F8C41431C4A30084CD0B /* LogicTest.octest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -287,6 +334,7 @@
 				07C58BFE13B74001002832EE /* UIKit.framework */,
 				07C58C0013B74001002832EE /* Foundation.framework */,
 				07C58C0213B74001002832EE /* CoreGraphics.framework */,
+				0745F8C51431C4A30084CD0B /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -296,12 +344,12 @@
 			children = (
 				077E478B13C9188B00BB3BF3 /* util */,
 				077E478013C9020C00BB3BF3 /* models */,
-				0797740913C4BB6200DDE138 /* Resource */,
-				0723E59013B748B700DECC2C /* Add */,
-				0723E58313B7484900DECC2C /* Notify */,
-				0723E58A13B7487000DECC2C /* Calendar */,
-				0723E59113B748D000DECC2C /* Setting */,
-				0723E59213B748E000DECC2C /* Info */,
+				0797740913C4BB6200DDE138 /* resources */,
+				0723E59013B748B700DECC2C /* add */,
+				0723E58313B7484900DECC2C /* notify */,
+				0723E58A13B7487000DECC2C /* calendar */,
+				0723E59113B748D000DECC2C /* setting */,
+				0723E59213B748E000DECC2C /* info */,
 				07C58C0D13B74001002832EE /* RentalDayNotifierAppDelegate.h */,
 				07C58C0E13B74001002832EE /* RentalDayNotifierAppDelegate.m */,
 				07C58C1013B74001002832EE /* MainWindow.xib */,
@@ -330,6 +378,24 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
+		0745F8C31431C4A30084CD0B /* LogicTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0745F8D51431C4A30084CD0B /* Build configuration list for PBXNativeTarget "LogicTest" */;
+			buildPhases = (
+				0745F8BF1431C4A30084CD0B /* Sources */,
+				0745F8C01431C4A30084CD0B /* Frameworks */,
+				0745F8C11431C4A30084CD0B /* Resources */,
+				0745F8C21431C4A30084CD0B /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LogicTest;
+			productName = LogicTest;
+			productReference = 0745F8C41431C4A30084CD0B /* LogicTest.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
 		07C58BF913B74001002832EE /* RentalDayNotifier */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 07C58C2113B74002002832EE /* Build configuration list for PBXNativeTarget "RentalDayNotifier" */;
@@ -368,11 +434,21 @@
 			projectRoot = "";
 			targets = (
 				07C58BF913B74001002832EE /* RentalDayNotifier */,
+				0745F8C31431C4A30084CD0B /* LogicTest */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
+		0745F8C11431C4A30084CD0B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0745F8CF1431C4A30084CD0B /* InfoPlist.strings in Resources */,
+				0745F8D11431C4A30084CD0B /* LogicTest.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07C58BF813B74001002832EE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -416,7 +492,31 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0745F8C21431C4A30084CD0B /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
+		0745F8BF1431C4A30084CD0B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0745F8D31431C4A30084CD0B /* LogicTest.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 		07C58BF613B74001002832EE /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -442,6 +542,14 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
+		0745F8CD1431C4A30084CD0B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0745F8CE1431C4A30084CD0B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
 		07C58C0713B74001002832EE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -477,6 +585,48 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		0745F8D61431C4A30084CD0B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LogicTest/LogicTest-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "LogicTest/LogicTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		0745F8D71431C4A30084CD0B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(DEVELOPER_LIBRARY_DIR)/Frameworks",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LogicTest/LogicTest-Prefix.pch";
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				INFOPLIST_FILE = "LogicTest/LogicTest-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				VALIDATE_PRODUCT = YES;
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
 		07C58C1F13B74002002832EE /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -540,6 +690,14 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		0745F8D51431C4A30084CD0B /* Build configuration list for PBXNativeTarget "LogicTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0745F8D61431C4A30084CD0B /* Debug */,
+				0745F8D71431C4A30084CD0B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
 		07C58BF413B74001002832EE /* Build configuration list for PBXProject "RentalDayNotifier" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

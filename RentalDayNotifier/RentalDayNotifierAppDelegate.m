@@ -7,6 +7,7 @@
 //
 
 #import "RentalDayNotifierAppDelegate.h"
+#import "EditViewController.h"
 #import "RelativeDateTime.h"
 @implementation RentalDayNotifierAppDelegate
 
@@ -17,6 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
   self.window.rootViewController = self.tabBarController;
+  EditViewController* rootView = [[EditViewController alloc] initWithStyle:UITableViewStyleGrouped];
+  [(UINavigationController*)[self.tabBarController.viewControllers objectAtIndex:2] pushViewController:rootView animated:NO];
   [self.window makeKeyAndVisible];
   return YES;
 }

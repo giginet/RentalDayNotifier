@@ -56,7 +56,7 @@
 - (id)initWithCoder:(NSCoder *)aDecoder{
   if( (self = [super init])){
     rentalDay_    = [[aDecoder decodeObjectForKey:@"RENTALDAY"] retain];
-    alertDateTime_    = [[aDecoder decodeObjectForKey:@"alertDateTime"] retain];
+    alertDateTime_= [[aDecoder decodeObjectForKey:@"alertDateTime"] retain];
     kinds_        = [[aDecoder decodeObjectForKey:@"KINDS"] retain];
     note_         = [[aDecoder decodeObjectForKey:@"NOTE"] retain];
     alertEnable_  = [(NSNumber*)[aDecoder decodeObjectForKey:@"ALERTENABLE"] boolValue];
