@@ -10,7 +10,9 @@
 #import "EditTableCellViewController.h"
 #import "UIToggle.h"
 #import "EditIconToggle.h"
+#import "NotificationDatePicker.h"
 #import "PeriodPicker.h"
+#import "NotifyPicker.h"
 
 @implementation EditViewController
 @synthesize notification=notification_;
@@ -72,7 +74,7 @@
       // 返却通知
       cell = (UITableViewCell*)vc.view;
       vc.mainLabel.text = [notification_ alertDescription];
-      UIToggle* toggle = [[[UIToggle alloc] initWithFrame:CGRectMake(40, 20, 50, 50)] autorelease];
+      UIToggle* toggle = [[[UIToggle alloc] initWithFrame:CGRectMake(30, 20, 50, 50)] autorelease];
       [toggle setOnImage:@"on.png" offImage:@"off.png"];
       [cell addSubview:toggle];
     }else if(section == 4){
@@ -137,7 +139,7 @@
   UIViewController* dateSelectController = [[[UIViewController alloc] init] autorelease];
   dateSelectController.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
   if(section == 1){
-    UIDatePicker* dp = [[[UIDatePicker alloc] init] autorelease];
+    NotificationDatePicker* dp = [[[NotificationDatePicker alloc] initWithNotification:notification_] autorelease];
     dp.datePickerMode = UIDatePickerModeDate;
     dp.maximumDate = [NSDate date];
     [dateSelectController.view addSubview:dp];
@@ -147,6 +149,9 @@
     [dateSelectController.view addSubview:pp];
     [self.navigationController pushViewController:dateSelectController animated:YES];
   }else if(section == 3){
+    NotifyPicker* np = [[[NotifyPicker alloc] initWithNotification:notification_] autorelease];
+    [dateSelectController.view addSubview:np];
+    [self.navigationController pushViewController:dateSelectController animated:YES];
   }
 }
 
