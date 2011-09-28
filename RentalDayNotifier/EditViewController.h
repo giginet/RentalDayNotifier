@@ -13,6 +13,6 @@
   Notification* notification_;
 }
 
-@property(readwrite, retain) Notification* notification_;
+@property(readwrite, retain) Notification* notification;
 
 @end

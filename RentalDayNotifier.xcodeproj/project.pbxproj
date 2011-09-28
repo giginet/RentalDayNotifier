@@ -14,7 +14,6 @@
 		0723E5A013B7496600DECC2C /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0723E59E13B7496600DECC2C /* InfoViewController.m */; };
 		0723E5A113B7496600DECC2C /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0723E59F13B7496600DECC2C /* InfoView.xib */; };
 		0723E5A413B74B0200DECC2C /* SettingViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0723E5A313B74B0200DECC2C /* SettingViewController.m */; };
-		0723E5A613B74B3100DECC2C /* EditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0723E5A513B74B3100DECC2C /* EditView.xib */; };
 		0723E5AA13B74BAE00DECC2C /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0723E5A813B74BAE00DECC2C /* CalendarViewController.m */; };
 		0723E5AB13B74BAE00DECC2C /* CalendarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0723E5A913B74BAE00DECC2C /* CalendarView.xib */; };
 		073E2C2113BC4B870094B1C3 /* Notification.m in Sources */ = {isa = PBXBuildFile; fileRef = 073E2C2013BC4B860094B1C3 /* Notification.m */; };
@@ -25,6 +24,8 @@
 		0745F8CF1431C4A30084CD0B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 0745F8CD1431C4A30084CD0B /* InfoPlist.strings */; };
 		0745F8D11431C4A30084CD0B /* LogicTest.h in Resources */ = {isa = PBXBuildFile; fileRef = 0745F8D01431C4A30084CD0B /* LogicTest.h */; };
 		0745F8D31431C4A30084CD0B /* LogicTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745F8D21431C4A30084CD0B /* LogicTest.m */; };
+		0745F8E01431F6710084CD0B /* EditView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0745F8E21431F6710084CD0B /* EditView.xib */; };
+		0745F8EA1432E6600084CD0B /* PeriodPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745F8E91432E6600084CD0B /* PeriodPicker.m */; };
 		0754B70213C80146002E68B0 /* EditIconToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0754B70113C80146002E68B0 /* EditIconToggle.m */; };
 		0765ACD413C6630B001B03F8 /* EditTableCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765ACD313C6630B001B03F8 /* EditTableCellViewController.m */; };
 		077E478A13C9188500BB3BF3 /* DatePatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 077E478913C9188400BB3BF3 /* DatePatch.m */; };
@@ -80,7 +81,6 @@
 		0723E59F13B7496600DECC2C /* InfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = "<group>"; };
 		0723E5A213B74B0200DECC2C /* SettingViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = SettingViewController.h; path = RentalDayNotifier/SettingViewController.h; sourceTree = "<group>"; };
 		0723E5A313B74B0200DECC2C /* SettingViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = SettingViewController.m; path = RentalDayNotifier/SettingViewController.m; sourceTree = "<group>"; };
-		0723E5A513B74B3100DECC2C /* EditView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditView.xib; sourceTree = "<group>"; };
 		0723E5A713B74BAE00DECC2C /* CalendarViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
 		0723E5A813B74BAE00DECC2C /* CalendarViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
 		0723E5A913B74BAE00DECC2C /* CalendarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CalendarView.xib; sourceTree = "<group>"; };
@@ -93,6 +93,11 @@
 		0745F8D01431C4A30084CD0B /* LogicTest.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LogicTest.h; sourceTree = "<group>"; };
 		0745F8D21431C4A30084CD0B /* LogicTest.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LogicTest.m; sourceTree = "<group>"; };
 		0745F8D41431C4A30084CD0B /* LogicTest-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LogicTest-Prefix.pch"; sourceTree = "<group>"; };
+		0745F8DF1431F6680084CD0B /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/MainWindow.xib; sourceTree = "<group>"; };
+		0745F8E11431F6710084CD0B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/EditView.xib; sourceTree = "<group>"; };
+		0745F8E31431F67B0084CD0B /* ja */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = ja; path = ja.lproj/EditView.xib; sourceTree = "<group>"; };
+		0745F8E81432E6600084CD0B /* PeriodPicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PeriodPicker.h; sourceTree = "<group>"; };
+		0745F8E91432E6600084CD0B /* PeriodPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PeriodPicker.m; sourceTree = "<group>"; };
 		0754B70013C80146002E68B0 /* EditIconToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditIconToggle.h; sourceTree = "<group>"; };
 		0754B70113C80146002E68B0 /* EditIconToggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditIconToggle.m; sourceTree = "<group>"; };
 		0765ACD213C6630B001B03F8 /* EditTableCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTableCellViewController.h; sourceTree = "<group>"; };
@@ -197,7 +202,7 @@
 			children = (
 				0723E59313B7491300DECC2C /* EditViewController.h */,
 				0723E59413B7491300DECC2C /* EditViewController.m */,
-				0723E5A513B74B3100DECC2C /* EditView.xib */,
+				0745F8E21431F6710084CD0B /* EditView.xib */,
 				0797740313C4B85D00DDE138 /* EditTableCell.xib */,
 				0765ACD213C6630B001B03F8 /* EditTableCellViewController.h */,
 				0765ACD313C6630B001B03F8 /* EditTableCellViewController.m */,
@@ -205,6 +210,8 @@
 				0754B70113C80146002E68B0 /* EditIconToggle.m */,
 				0797743D13C4C28900DDE138 /* UIToggle.h */,
 				0797743E13C4C28900DDE138 /* UIToggle.m */,
+				0745F8E81432E6600084CD0B /* PeriodPicker.h */,
+				0745F8E91432E6600084CD0B /* PeriodPicker.m */,
 			);
 			name = add;
 			sourceTree = "<group>";
@@ -427,6 +434,7 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				ja,
 			);
 			mainGroup = 07C58BEF13B74001002832EE;
 			productRefGroup = 07C58BFB13B74001002832EE /* Products */;
@@ -460,7 +468,7 @@
 				0723E58913B7486700DECC2C /* NotifyView.xib in Resources */,
 				0723E59C13B7492000DECC2C /* SettingView.xib in Resources */,
 				0723E5A113B7496600DECC2C /* InfoView.xib in Resources */,
-				0723E5A613B74B3100DECC2C /* EditView.xib in Resources */,
+				0745F8E01431F6710084CD0B /* EditView.xib in Resources */,
 				0723E5AB13B74BAE00DECC2C /* CalendarView.xib in Resources */,
 				0797740513C4B85D00DDE138 /* EditTableCell.xib in Resources */,
 				0797742313C4BBC100DDE138 /* bell.png in Resources */,
@@ -536,6 +544,7 @@
 				0754B70213C80146002E68B0 /* EditIconToggle.m in Sources */,
 				077E478A13C9188500BB3BF3 /* DatePatch.m in Sources */,
 				077E478E13C9195800BB3BF3 /* RelativeDateTime.m in Sources */,
+				0745F8EA1432E6600084CD0B /* PeriodPicker.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -550,6 +559,15 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
+		0745F8E21431F6710084CD0B /* EditView.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0745F8E11431F6710084CD0B /* en */,
+				0745F8E31431F67B0084CD0B /* ja */,
+			);
+			name = EditView.xib;
+			sourceTree = "<group>";
+		};
 		07C58C0713B74001002832EE /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -562,6 +580,7 @@
 			isa = PBXVariantGroup;
 			children = (
 				07C58C1113B74001002832EE /* en */,
+				0745F8DF1431F6680084CD0B /* ja */,
 			);
 			name = MainWindow.xib;
 			sourceTree = "<group>";

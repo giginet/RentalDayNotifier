@@ -18,7 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
   self.window.rootViewController = self.tabBarController;
-  EditViewController* rootView = [[EditViewController alloc] initWithStyle:UITableViewStyleGrouped];
+  EditViewController* rootView = [[[EditViewController alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
   [(UINavigationController*)[self.tabBarController.viewControllers objectAtIndex:2] pushViewController:rootView animated:NO];
   [self.window makeKeyAndVisible];
   return YES;

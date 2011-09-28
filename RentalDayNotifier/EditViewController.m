@@ -10,8 +10,10 @@
 #import "EditTableCellViewController.h"
 #import "UIToggle.h"
 #import "EditIconToggle.h"
+#import "PeriodPicker.h"
 
 @implementation EditViewController
+@synthesize notification=notification_;
 
 - (void)viewDidLoad{
   [super viewDidLoad];
@@ -45,6 +47,7 @@
     int section = indexPath.section;
     cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
     cell.selectionStyle = UITableViewCellSelectionStyleNone;
+    EditTableCellViewController* vc = [[[EditTableCellViewController alloc] initWithNibName:@"EditTableCell" bundle:nil] autorelease];
     if(section == 0){
       NSString* icons[] = {@"book", @"movie", @"dvd"};
       NSString* labels[] = {@"BOOK", @"MOVIE", @"MUSIC"};
@@ -59,17 +62,14 @@
       }
     }else if(section == 1){
       // 借りた日
-      EditTableCellViewController* vc = [[[EditTableCellViewController alloc] initWithNibName:@"EditTableCell" bundle:nil] autorelease];
       cell = (UITableViewCell*)vc.view;
       vc.mainLabel.text = [notification_ rentalDayDescription];
     }else if(section == 2){
       // レンタル期間
-      EditTableCellViewController* vc = [[[EditTableCellViewController alloc] initWithNibName:@"EditTableCell" bundle:nil] autorelease];
       cell = (UITableViewCell*)vc.view;
       vc.mainLabel.text = [notification_ periodDescription];
     }else if(section == 3){
       // 返却通知
-      EditTableCellViewController* vc = [[[EditTableCellViewController alloc] initWithNibName:@"EditTableCell" bundle:nil] autorelease];
       cell = (UITableViewCell*)vc.view;
       vc.mainLabel.text = [notification_ alertDescription];
       UIToggle* toggle = [[[UIToggle alloc] initWithFrame:CGRectMake(40, 20, 50, 50)] autorelease];
@@ -132,16 +132,22 @@
 
 #pragma mark - Table view delegate
 
-- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-  // Navigation logic may go here. Create and push another view controller.
-  /*
-   <#DetailViewController#> *detailViewController = [[<#DetailViewController#> alloc] initWithNibName:@"<#Nib name#>" bundle:nil];
-   // ...
-   // Pass the selected object to the new view controller.
-   [self.navigationController pushViewController:detailViewController animated:YES];
-   [detailViewController release];
-   */
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+  int section = indexPath.section;
+  UIViewController* dateSelectController = [[[UIViewController alloc] init] autorelease];
+  dateSelectController.view.backgroundColor = [UIColor groupTableViewBackgroundColor];
+  if(section == 1){
+    UIDatePicker* dp = [[[UIDatePicker alloc] init] autorelease];
+    dp.datePickerMode = UIDatePickerModeDate;
+    dp.maximumDate = [NSDate date];
+    [dateSelectController.view addSubview:dp];
+    [self.navigationController pushViewController:dateSelectController animated:YES];
+  }else if(section == 2){
+    PeriodPicker* pp = [[[PeriodPicker alloc] initWithNotification:notification_] autorelease];
+    [dateSelectController.view addSubview:pp];
+    [self.navigationController pushViewController:dateSelectController animated:YES];
+  }else if(section == 3){
+  }
 }
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
