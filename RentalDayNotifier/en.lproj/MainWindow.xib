@@ -331,7 +331,6 @@
 					<string>110.IBPluginDependency</string>
 					<string>111.IBPluginDependency</string>
 					<string>125.IBPluginDependency</string>
-					<string>126.CustomClassName</string>
 					<string>126.IBPluginDependency</string>
 					<string>127.IBPluginDependency</string>
 					<string>128.CustomClassName</string>
@@ -359,7 +358,6 @@
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
-					<string>UINavigationController</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>SettingViewController</string>

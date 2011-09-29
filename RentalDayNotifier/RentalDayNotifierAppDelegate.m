@@ -18,8 +18,7 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions{
   self.window.rootViewController = self.tabBarController;
-  EditViewController* rootView = [[[EditViewController alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
-  [(UINavigationController*)[self.tabBarController.viewControllers objectAtIndex:2] pushViewController:rootView animated:NO];
+  self.tabBarController.delegate = self;
   [self.window makeKeyAndVisible];
   return YES;
 }
@@ -63,25 +62,21 @@
    */
 }
 
-- (void)dealloc
-{
+- (void)dealloc{
   [_window release];
   [_tabBarController release];
   [super dealloc];
 }
 
-/*
  // Optional UITabBarControllerDelegate method.
- - (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController
- {
- }
- */
-
-/*
- // Optional UITabBarControllerDelegate method.
- - (void)tabBarController:(UITabBarController *)tabBarController didEndCustomizingViewControllers:(NSArray *)viewControllers changed:(BOOL)changed
- {
- }
- */
+- (void)tabBarController:(UITabBarController *)tabBarController didSelectViewController:(UIViewController *)viewController{
+  if ([viewController isKindOfClass:[UINavigationController class]]){
+    EditViewController* rootView = [[[EditViewController alloc] initWithStyle:UITableViewStyleGrouped] autorelease];
+    UINavigationController* navigationController = [[UINavigationController alloc] initWithRootViewController:rootView];
+    [navigationController setHidesBottomBarWhenPushed:YES];
+    //[(UINavigationController*)viewController pushViewController:rootView animated:NO];
+    [self.window.rootViewController presentModalViewController:navigationController animated:YES];
+  }
+}
 
 @end
