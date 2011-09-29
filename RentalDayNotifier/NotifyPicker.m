@@ -7,6 +7,7 @@
 //
 
 #import "NotifyPicker.h"
+#import "RelativeDateTime.h"
 
 @implementation NotifyPicker
 @synthesize notification=notification_;
@@ -55,7 +56,13 @@
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-  // あとでかく
+  if (component == 0) { 
+    notification_.alertDateTime.day = row - 1;
+  } else if(component == 1) {
+    notification_.alertDateTime.hour = row;
+  } else {
+    notification_.alertDateTime.minute = row;
+  }
 }
 
 @end

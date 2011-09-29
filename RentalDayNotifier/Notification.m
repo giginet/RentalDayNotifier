@@ -10,13 +10,16 @@
 #import "DatePatch.h"
 
 @implementation Notification
-@synthesize alertEnable=alertEnable_, rentalPeriod=rentalPeriod_, rentalDay=rentalDay_, alertDateTime=alertDateTime_, kinds=kinds_, note=note_;
+@synthesize alertEnable=alertEnable_, rentalPeriod=rentalPeriod_, 
+rentalDay=rentalDay_, alertDateTime=alertDateTime_, kinds=kinds_, 
+note=note_, createdAt=createdAt_;
 
 - (id)init{
   if((self = [super init])){
     NSUserDefaults* ud = [NSUserDefaults standardUserDefaults];
     alertEnable_ = NO;
     rentalPeriod_ = 7;
+    createdAt_ = [[NSDate date] retain];
     if([ud objectForKey:@"alertDateTime"]){
       alertDateTime_ = [[ud objectForKey:@"alertDateTime"] retain];
     }else{
@@ -34,7 +37,13 @@
   [kinds_ release];
   [note_ release];
   [alertDateTime_ release];
+  [createdAt_ release];
   [super dealloc];
+}
+
+- (BOOL)isEqual:(id)object{
+  Notification* notification = (Notification*)object;
+  return [notification.createdAt isEqual:self];
 }
 
 /*

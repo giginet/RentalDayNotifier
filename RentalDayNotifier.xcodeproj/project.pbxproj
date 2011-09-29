@@ -28,6 +28,8 @@
 		0745F8EA1432E6600084CD0B /* PeriodPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745F8E91432E6600084CD0B /* PeriodPicker.m */; };
 		0745F8ED1432F42E0084CD0B /* NotifyPicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745F8EC1432F42D0084CD0B /* NotifyPicker.m */; };
 		0745F8F0143301C10084CD0B /* NotificationDatePicker.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745F8EF143301C00084CD0B /* NotificationDatePicker.m */; };
+		0745F8F314330F0F0084CD0B /* NotificationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745F8F214330F0F0084CD0B /* NotificationManager.m */; };
+		0745F8FA143316B70084CD0B /* KWSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745F8F9143316B70084CD0B /* KWSingleton.m */; };
 		0754B70213C80146002E68B0 /* EditIconToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0754B70113C80146002E68B0 /* EditIconToggle.m */; };
 		0765ACD413C6630B001B03F8 /* EditTableCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765ACD313C6630B001B03F8 /* EditTableCellViewController.m */; };
 		077E478A13C9188500BB3BF3 /* DatePatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 077E478913C9188400BB3BF3 /* DatePatch.m */; };
@@ -104,6 +106,10 @@
 		0745F8EC1432F42D0084CD0B /* NotifyPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyPicker.m; sourceTree = "<group>"; };
 		0745F8EE143301C00084CD0B /* NotificationDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationDatePicker.h; sourceTree = "<group>"; };
 		0745F8EF143301C00084CD0B /* NotificationDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationDatePicker.m; sourceTree = "<group>"; };
+		0745F8F114330F0F0084CD0B /* NotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; path = NotificationManager.h; sourceTree = "<group>"; };
+		0745F8F214330F0F0084CD0B /* NotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationManager.m; sourceTree = "<group>"; };
+		0745F8F8143316B70084CD0B /* KWSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSingleton.h; sourceTree = "<group>"; };
+		0745F8F9143316B70084CD0B /* KWSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWSingleton.m; sourceTree = "<group>"; };
 		0754B70013C80146002E68B0 /* EditIconToggle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditIconToggle.h; sourceTree = "<group>"; };
 		0754B70113C80146002E68B0 /* EditIconToggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditIconToggle.m; sourceTree = "<group>"; };
 		0765ACD213C6630B001B03F8 /* EditTableCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTableCellViewController.h; sourceTree = "<group>"; };
@@ -274,6 +280,8 @@
 				073E2C2013BC4B860094B1C3 /* Notification.m */,
 				077E478C13C9195800BB3BF3 /* RelativeDateTime.h */,
 				077E478D13C9195800BB3BF3 /* RelativeDateTime.m */,
+				0745F8F114330F0F0084CD0B /* NotificationManager.h */,
+				0745F8F214330F0F0084CD0B /* NotificationManager.m */,
 			);
 			name = models;
 			sourceTree = "<group>";
@@ -281,6 +289,8 @@
 		077E478B13C9188B00BB3BF3 /* util */ = {
 			isa = PBXGroup;
 			children = (
+				0745F8F8143316B70084CD0B /* KWSingleton.h */,
+				0745F8F9143316B70084CD0B /* KWSingleton.m */,
 				077E478813C9188400BB3BF3 /* DatePatch.h */,
 				077E478913C9188400BB3BF3 /* DatePatch.m */,
 			);
@@ -557,6 +567,8 @@
 				0745F8EA1432E6600084CD0B /* PeriodPicker.m in Sources */,
 				0745F8ED1432F42E0084CD0B /* NotifyPicker.m in Sources */,
 				0745F8F0143301C10084CD0B /* NotificationDatePicker.m in Sources */,
+				0745F8F314330F0F0084CD0B /* NotificationManager.m in Sources */,
+				0745F8FA143316B70084CD0B /* KWSingleton.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -728,6 +740,7 @@
 				0745F8D71431C4A30084CD0B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		07C58BF413B74001002832EE /* Build configuration list for PBXProject "RentalDayNotifier" */ = {
 			isa = XCConfigurationList;

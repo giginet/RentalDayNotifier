@@ -8,6 +8,10 @@
 
 #import "NotificationDatePicker.h"
 
+@interface NotificationDatePicker()
+- (void)setRentalDay:(id)sender;
+@end
+
 @implementation NotificationDatePicker
 @synthesize notification=notification_;
 
@@ -15,6 +19,7 @@
   self = [super init];
   if(self){
     self.notification = notification;
+    [self addTarget:self action:@selector(setRentalDay:) forControlEvents:UIControlEventValueChanged];
   }
   return self;
 }
@@ -22,6 +27,10 @@
 - (void)dealloc{
   [notification_ release];
   [super dealloc];
+}
+
+- (void)setRentalDay:(id)sender{
+  notification_.rentalDay = self.date;
 }
 
 @end

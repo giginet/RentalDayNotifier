@@ -14,6 +14,11 @@
 #import "PeriodPicker.h"
 #import "NotifyPicker.h"
 
+@interface EditViewController()
+- (void)pressSaveButton:(id)sender;
+- (void)closeKeyboard:(id)sender;
+@end
+
 @implementation EditViewController
 @synthesize notification=notification_;
 
@@ -24,6 +29,9 @@
 - (void)viewWillAppear:(BOOL)animated{
   if(!notification_){
     notification_ = [[Notification alloc] init];
+    self.navigationItem.rightBarButtonItem = [[[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemSave 
+                                                                                           target:self 
+                                                                                           action:@selector(pressSaveButton:)] autorelease];
   }
   [super viewWillAppear:animated];
 }
@@ -55,6 +63,7 @@
       NSString* labels[] = {@"BOOK", @"MOVIE", @"MUSIC"};
       for(int i=0;i<3;++i){
         EditIconToggle* kind = [[[EditIconToggle alloc] initWithFrame:CGRectMake(20+70*i, 20, 70, 70)] autorelease];
+        
         [kind.toggle setOnImage:[NSString stringWithFormat:@"%@_on.png", icons[i]] 
                        offImage:[NSString stringWithFormat:@"%@_off.png", icons[i]]];
         kind.label.text = labels[i];
@@ -81,6 +90,19 @@
       // 備考欄
       UITextView* txf = [[[UITextView alloc] initWithFrame:CGRectMake(15, 10, 290, 80)] autorelease];
       txf.text = notification_.note;
+      UIView* accessoryView =[[[UIView alloc] initWithFrame:CGRectMake(0,0,320,50)] autorelease];
+      accessoryView.backgroundColor = [UIColor whiteColor];
+      
+      // ボタンを作成する。
+      UIButton* closeButton = [UIButton buttonWithType:UIButtonTypeRoundedRect];
+      closeButton.frame = CGRectMake(210,10,100,30);
+      [closeButton setTitle:@"閉じる" forState:UIControlStateNormal];
+      // ボタンを押したときによばれる動作を設定する。
+      [closeButton addTarget:self action:@selector(closeKeyboard:) forControlEvents:UIControlEventTouchUpInside];
+      // ボタンをViewに貼る
+      [accessoryView addSubview:closeButton];
+      
+      txf.inputAccessoryView = accessoryView;
       [cell addSubview:txf];
     }
   }
@@ -93,44 +115,9 @@
   return headers[section];
 }
 
-/*
- // Override to support conditional editing of the table view.
- - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the specified item to be editable.
- return YES;
- }
- */
-
-/*
- // Override to support editing the table view.
- - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath
- {
- if (editingStyle == UITableViewCellEditingStyleDelete) {
- // Delete the row from the data source
- [tableView deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation:UITableViewRowAnimationFade];
- }   
- else if (editingStyle == UITableViewCellEditingStyleInsert) {
- // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
- }   
- }
- */
-
-/*
- // Override to support rearranging the table view.
- - (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath
- {
- }
- */
-
-/*
- // Override to support conditional rearranging of the table view.
- - (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath
- {
- // Return NO if you do not want the item to be re-orderable.
- return YES;
- }
- */
+- (void)pressSaveButton:(id)sender{
+  // 保存します
+}
 
 #pragma mark - Table view delegate
 
@@ -157,6 +144,13 @@
 
 - (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
   return 100;
+}
+
+-(void)closeKeyboard:(id)sender{
+  UITextView* textField = (UITextView*)(((UIButton*)sender).superview);
+  if([textField canResignFirstResponder]){
+    [textField resignFirstResponder];
+  }
 }
 
 @end

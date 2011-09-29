@@ -40,7 +40,7 @@
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-  // あとでかく
+  notification_.rentalPeriod = row;
 }
 
 @end

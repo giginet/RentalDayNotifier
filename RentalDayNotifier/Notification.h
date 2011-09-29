@@ -11,17 +11,19 @@
 // レンタル通知モデル
 
 @interface Notification : NSObject <NSCoding>{
-  BOOL alertEnable_;     // 通知が有効かどうか
-  int rentalPeriod_;     // 何泊レンタルしたか
-  NSDate* rentalDay_;    // レンタル日
-  NSIndexSet* kinds_;    // レンタルしたモノの種類を格納
-  NSString* note_;       // 備考
+  BOOL alertEnable_;                   // 通知が有効かどうか
+  int rentalPeriod_;                   // 何泊レンタルしたか
+  NSDate* rentalDay_;                  // レンタル日
+  NSIndexSet* kinds_;                  // レンタルしたモノの種類を格納
+  NSString* note_;                     // 備考
   RelativeDateTime* alertDateTime_;    // 通知日時
+  NSDate* createdAt_;                  // 作成日
 }
 
 - (NSString*)rentalDayDescription;
 - (NSString*)periodDescription;
 - (NSString*)alertDescription;
+- (BOOL)isNotificationDayOn:(NSDate*)date;
 
 @property(readwrite) BOOL alertEnable;
 @property(readwrite) int rentalPeriod;
@@ -29,4 +31,5 @@
 @property(readwrite, retain) NSIndexSet* kinds;
 @property(readwrite, retain) NSString* note;
 @property(readwrite, assign) RelativeDateTime* alertDateTime;
+@property(readonly, retain)  NSDate* createdAt;
 @end

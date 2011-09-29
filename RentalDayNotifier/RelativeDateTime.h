@@ -20,7 +20,7 @@
 // fromから絶対的なNSDateを返す
 - (NSDate*)toDate:(NSDate*)from;
 
-@property(readonly) int day;
-@property(readonly) int hour;
-@property(readonly) int minute;
+@property(readwrite) int day;
+@property(readwrite) int hour;
+@property(readwrite) int minute;
 @end
