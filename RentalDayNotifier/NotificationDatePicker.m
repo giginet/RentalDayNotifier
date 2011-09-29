@@ -20,6 +20,7 @@
   if(self){
     self.notification = notification;
     [self addTarget:self action:@selector(setRentalDay:) forControlEvents:UIControlEventValueChanged];
+    self.date = notification_.rentalDay;
   }
   return self;
 }

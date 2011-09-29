@@ -13,6 +13,7 @@
 #import "NotificationDatePicker.h"
 #import "PeriodPicker.h"
 #import "NotifyPicker.h"
+#import "NotificationManager.h"
 
 @interface EditViewController()
 - (void)pressSaveButton:(id)sender;
@@ -33,6 +34,7 @@
                                                                                            target:self 
                                                                                            action:@selector(pressSaveButton:)] autorelease];
   }
+  [self.tableView reloadData];
   [super viewWillAppear:animated];
 }
 
@@ -88,8 +90,8 @@
       [cell addSubview:toggle];
     }else if(section == 4){
       // 備考欄
-      UITextView* txf = [[[UITextView alloc] initWithFrame:CGRectMake(15, 10, 290, 80)] autorelease];
-      txf.text = notification_.note;
+      textField_ = [[[UITextView alloc] initWithFrame:CGRectMake(15, 10, 290, 80)] autorelease];
+      textField_.text = notification_.note;
       UIView* accessoryView =[[[UIView alloc] initWithFrame:CGRectMake(0,0,320,50)] autorelease];
       accessoryView.backgroundColor = [UIColor whiteColor];
       
@@ -102,8 +104,8 @@
       // ボタンをViewに貼る
       [accessoryView addSubview:closeButton];
       
-      txf.inputAccessoryView = accessoryView;
-      [cell addSubview:txf];
+      textField_.inputAccessoryView = accessoryView;
+      [cell addSubview:textField_];
     }
   }
   
@@ -116,7 +118,8 @@
 }
 
 - (void)pressSaveButton:(id)sender{
-  // 保存します
+  // save the notification.
+  [[NotificationManager instance] saveWithNotification:notification_];
 }
 
 #pragma mark - Table view delegate
@@ -147,9 +150,8 @@
 }
 
 -(void)closeKeyboard:(id)sender{
-  UITextView* textField = (UITextView*)(((UIButton*)sender).superview);
-  if([textField canResignFirstResponder]){
-    [textField resignFirstResponder];
+  if([textField_ canResignFirstResponder]){
+    [textField_ resignFirstResponder];
   }
 }
 

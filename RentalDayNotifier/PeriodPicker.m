@@ -18,6 +18,7 @@
     self.dataSource = self;
     self.showsSelectionIndicator = YES;
     self.notification = notification;
+    [self selectRow:notification.rentalPeriod - 1 inComponent:0 animated:NO];
   }
   return self;
 }
@@ -40,7 +41,7 @@
 }
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-  notification_.rentalPeriod = row;
+  notification_.rentalPeriod = row + 1;
 }
 
 @end

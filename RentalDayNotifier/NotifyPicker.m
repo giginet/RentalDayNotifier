@@ -19,6 +19,9 @@
     self.dataSource = self;
     self.showsSelectionIndicator = YES;
     self.notification = notification;
+    [self selectRow:notification.alertDateTime.day + 1 inComponent:0 animated:NO];
+    [self selectRow:notification.alertDateTime.hour inComponent:1 animated:NO];
+    [self selectRow:notification.alertDateTime.minute inComponent:2 animated:NO];
   }
   return self;
 }

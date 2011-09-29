@@ -11,6 +11,7 @@
 
 @interface EditViewController : UITableViewController {
   Notification* notification_;
+  UITextView* textField_;
 }
 
 @property(readwrite, retain) Notification* notification;
