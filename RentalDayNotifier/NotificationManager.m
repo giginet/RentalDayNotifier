@@ -36,6 +36,7 @@
     [notifications_ addObject:notification];
     [notification release];
   }
+  [self writeStorage:notifications_];
 }
 
 - (Notification*)notificationAtIndex:(NSInteger)index{
@@ -85,6 +86,7 @@
     NSData* d = [NSKeyedArchiver archivedDataWithRootObject:n];
     [notificationDatas addObject:d];
   }
+  NSLog(@"%@", ud);
   [ud setObject:[[NSArray alloc] initWithArray:notificationDatas] forKey:@"notifications"];
 }
 

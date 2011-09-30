@@ -18,6 +18,8 @@
 @interface EditViewController()
 - (void)pressSaveButton:(id)sender;
 - (void)closeKeyboard:(id)sender;
+- (void)pressAlertEnableToggle:(id)sender;
+- (void)pressKindToggle:(id)sender;
 @end
 
 @implementation EditViewController
@@ -65,9 +67,10 @@
       NSString* labels[] = {@"BOOK", @"MOVIE", @"MUSIC"};
       for(int i=0;i<3;++i){
         EditIconToggle* kind = [[[EditIconToggle alloc] initWithFrame:CGRectMake(20+70*i, 20, 70, 70)] autorelease];
-        
         [kind.toggle setOnImage:[NSString stringWithFormat:@"%@_on.png", icons[i]] 
                        offImage:[NSString stringWithFormat:@"%@_off.png", icons[i]]];
+        kind.tag = i;
+        [kind.toggle addTarget:self action:@selector(pressKindToggle:) forControlEvents:UIControlEventTouchUpInside];
         kind.label.text = labels[i];
         // その種類が含まれていたらONにする
         [kind.toggle setToggle:[notification_.kinds containsIndex:i]];
@@ -87,6 +90,7 @@
       vc.mainLabel.text = [notification_ alertDescription];
       UIToggle* toggle = [[[UIToggle alloc] initWithFrame:CGRectMake(30, 20, 50, 50)] autorelease];
       [toggle setOnImage:@"on.png" offImage:@"off.png"];
+      [toggle addTarget:self action:@selector(pressAlertEnableToggle:) forControlEvents:UIControlEventTouchUpInside];
       [cell addSubview:toggle];
     }else if(section == 4){
       // 備考欄
@@ -120,6 +124,7 @@
 - (void)pressSaveButton:(id)sender{
   // save the notification.
   [[NotificationManager instance] saveWithNotification:notification_];
+  [self dismissModalViewControllerAnimated:YES];
 }
 
 #pragma mark - Table view delegate
@@ -152,6 +157,21 @@
 -(void)closeKeyboard:(id)sender{
   if([textField_ canResignFirstResponder]){
     [textField_ resignFirstResponder];
+  }
+}
+
+- (void)pressAlertEnableToggle:(id)sender{
+  UIToggle* toggle = (UIToggle*)sender;
+  notification_.alertEnable = toggle.toggle;
+}
+
+- (void)pressKindToggle:(id)sender{
+  EditIconToggle* toggle = (EditIconToggle*)sender;
+  NSMutableIndexSet* kinds = [[[NSMutableIndexSet alloc] initWithIndexSet:notification_.kinds] autorelease];
+  if(toggle.toggle.toggle){
+    [kinds addIndex:toggle.tag];
+  }else{
+    [kinds removeIndex:toggle.tag];
   }
 }
 

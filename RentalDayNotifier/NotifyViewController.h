@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-
+#import "NotificationManager.h"
 
 @interface NotifyViewController : UITableViewController {
-    
+  NotificationManager* manager_;
 }
 
 @end
