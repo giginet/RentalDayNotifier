@@ -13,6 +13,7 @@
   IBOutlet UITableView* tableView_;
   IBOutlet UINavigationBar* bar_;
   NotificationManager* manager_;
+  
 }
 
 @end

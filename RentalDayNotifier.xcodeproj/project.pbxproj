@@ -31,9 +31,11 @@
 		0745F8FA143316B70084CD0B /* KWSingleton.m in Sources */ = {isa = PBXBuildFile; fileRef = 0745F8F9143316B70084CD0B /* KWSingleton.m */; };
 		0754B70213C80146002E68B0 /* EditIconToggle.m in Sources */ = {isa = PBXBuildFile; fileRef = 0754B70113C80146002E68B0 /* EditIconToggle.m */; };
 		0765ACD413C6630B001B03F8 /* EditTableCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765ACD313C6630B001B03F8 /* EditTableCellViewController.m */; };
+		076F9701143AA429009DC56D /* NotifyCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 076F9700143AA429009DC56D /* NotifyCellViewController.m */; };
 		077E478A13C9188500BB3BF3 /* DatePatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 077E478913C9188400BB3BF3 /* DatePatch.m */; };
 		077E478E13C9195800BB3BF3 /* RelativeDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 077E478D13C9195800BB3BF3 /* RelativeDateTime.m */; };
 		078F7F47143A932700F6DCFF /* NotifyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078F7F46143A932700F6DCFF /* NotifyView.xib */; };
+		078F7F49143A982E00F6DCFF /* NotifyCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078F7F48143A982E00F6DCFF /* NotifyCell.xib */; };
 		0797740513C4B85D00DDE138 /* EditTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0797740313C4B85D00DDE138 /* EditTableCell.xib */; };
 		0797742313C4BBC100DDE138 /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 0797740B13C4BBC100DDE138 /* bell.png */; };
 		0797742413C4BBC100DDE138 /* bell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0797740C13C4BBC100DDE138 /* bell@2x.png */; };
@@ -113,11 +115,14 @@
 		0754B70113C80146002E68B0 /* EditIconToggle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditIconToggle.m; sourceTree = "<group>"; };
 		0765ACD213C6630B001B03F8 /* EditTableCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditTableCellViewController.h; sourceTree = "<group>"; };
 		0765ACD313C6630B001B03F8 /* EditTableCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditTableCellViewController.m; sourceTree = "<group>"; };
+		076F96FF143AA429009DC56D /* NotifyCellViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; path = NotifyCellViewController.h; sourceTree = "<group>"; };
+		076F9700143AA429009DC56D /* NotifyCellViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyCellViewController.m; sourceTree = "<group>"; };
 		077E478813C9188400BB3BF3 /* DatePatch.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePatch.h; sourceTree = "<group>"; };
 		077E478913C9188400BB3BF3 /* DatePatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePatch.m; sourceTree = "<group>"; };
 		077E478C13C9195800BB3BF3 /* RelativeDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelativeDateTime.h; sourceTree = "<group>"; };
 		077E478D13C9195800BB3BF3 /* RelativeDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelativeDateTime.m; sourceTree = "<group>"; };
 		078F7F46143A932700F6DCFF /* NotifyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotifyView.xib; sourceTree = "<group>"; };
+		078F7F48143A982E00F6DCFF /* NotifyCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotifyCell.xib; sourceTree = "<group>"; };
 		0797740313C4B85D00DDE138 /* EditTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditTableCell.xib; sourceTree = "<group>"; };
 		0797740B13C4BBC100DDE138 /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
 		0797740C13C4BBC100DDE138 /* bell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bell@2x.png"; sourceTree = "<group>"; };
@@ -195,6 +200,9 @@
 				0723E58513B7486700DECC2C /* NotifyViewController.h */,
 				0723E58613B7486700DECC2C /* NotifyViewController.m */,
 				078F7F46143A932700F6DCFF /* NotifyView.xib */,
+				078F7F48143A982E00F6DCFF /* NotifyCell.xib */,
+				076F96FF143AA429009DC56D /* NotifyCellViewController.h */,
+				076F9700143AA429009DC56D /* NotifyCellViewController.m */,
 			);
 			name = notify;
 			sourceTree = "<group>";
@@ -515,6 +523,7 @@
 				0797743913C4BBC100DDE138 /* return.png in Resources */,
 				0797743A13C4BBC100DDE138 /* return@2x.png in Resources */,
 				078F7F47143A932700F6DCFF /* NotifyView.xib in Resources */,
+				078F7F49143A982E00F6DCFF /* NotifyCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -569,6 +578,7 @@
 				0745F8F0143301C10084CD0B /* NotificationDatePicker.m in Sources */,
 				0745F8F314330F0F0084CD0B /* NotificationManager.m in Sources */,
 				0745F8FA143316B70084CD0B /* KWSingleton.m in Sources */,
+				076F9701143AA429009DC56D /* NotifyCellViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -7,6 +7,7 @@
 //
 
 #import "NotifyViewController.h"
+#import "NotifyCellViewController.h"
 
 @implementation NotifyViewController
 
@@ -52,8 +53,8 @@
   
   UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
   if (cell == nil) {
-    cell = [[[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:CellIdentifier] autorelease];
-    cell.textLabel.text = @"hoge";
+    NotifyCellViewController* controller = [[NotifyCellViewController alloc] initWithNotification:[manager_ notificationAtIndex:indexPath.row]];
+    cell = (UITableViewCell*)controller.view;
   }
   return cell;
 }
@@ -109,6 +110,10 @@
    [self.navigationController pushViewController:detailViewController animated:YES];
    [detailViewController release];
    */
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+  return 100;
 }
 
 @end
