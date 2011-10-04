@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		0723E58813B7486700DECC2C /* NotifyViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0723E58613B7486700DECC2C /* NotifyViewController.m */; };
-		0723E58913B7486700DECC2C /* NotifyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0723E58713B7486700DECC2C /* NotifyView.xib */; };
 		0723E59613B7491400DECC2C /* EditViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0723E59413B7491300DECC2C /* EditViewController.m */; };
 		0723E59C13B7492000DECC2C /* SettingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0723E59A13B7492000DECC2C /* SettingView.xib */; };
 		0723E5A013B7496600DECC2C /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0723E59E13B7496600DECC2C /* InfoViewController.m */; };
@@ -34,6 +33,7 @@
 		0765ACD413C6630B001B03F8 /* EditTableCellViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0765ACD313C6630B001B03F8 /* EditTableCellViewController.m */; };
 		077E478A13C9188500BB3BF3 /* DatePatch.m in Sources */ = {isa = PBXBuildFile; fileRef = 077E478913C9188400BB3BF3 /* DatePatch.m */; };
 		077E478E13C9195800BB3BF3 /* RelativeDateTime.m in Sources */ = {isa = PBXBuildFile; fileRef = 077E478D13C9195800BB3BF3 /* RelativeDateTime.m */; };
+		078F7F47143A932700F6DCFF /* NotifyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 078F7F46143A932700F6DCFF /* NotifyView.xib */; };
 		0797740513C4B85D00DDE138 /* EditTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0797740313C4B85D00DDE138 /* EditTableCell.xib */; };
 		0797742313C4BBC100DDE138 /* bell.png in Resources */ = {isa = PBXBuildFile; fileRef = 0797740B13C4BBC100DDE138 /* bell.png */; };
 		0797742413C4BBC100DDE138 /* bell@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 0797740C13C4BBC100DDE138 /* bell@2x.png */; };
@@ -76,7 +76,6 @@
 /* Begin PBXFileReference section */
 		0723E58513B7486700DECC2C /* NotifyViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotifyViewController.h; sourceTree = "<group>"; };
 		0723E58613B7486700DECC2C /* NotifyViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyViewController.m; sourceTree = "<group>"; };
-		0723E58713B7486700DECC2C /* NotifyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotifyView.xib; sourceTree = "<group>"; };
 		0723E59313B7491300DECC2C /* EditViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = EditViewController.h; sourceTree = "<group>"; };
 		0723E59413B7491300DECC2C /* EditViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = EditViewController.m; sourceTree = "<group>"; };
 		0723E59A13B7492000DECC2C /* SettingView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SettingView.xib; sourceTree = "<group>"; };
@@ -106,7 +105,7 @@
 		0745F8EC1432F42D0084CD0B /* NotifyPicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotifyPicker.m; sourceTree = "<group>"; };
 		0745F8EE143301C00084CD0B /* NotificationDatePicker.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationDatePicker.h; sourceTree = "<group>"; };
 		0745F8EF143301C00084CD0B /* NotificationDatePicker.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationDatePicker.m; sourceTree = "<group>"; };
-		0745F8F114330F0F0084CD0B /* NotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; path = NotificationManager.h; sourceTree = "<group>"; };
+		0745F8F114330F0F0084CD0B /* NotificationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NotificationManager.h; sourceTree = "<group>"; };
 		0745F8F214330F0F0084CD0B /* NotificationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = NotificationManager.m; sourceTree = "<group>"; };
 		0745F8F8143316B70084CD0B /* KWSingleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KWSingleton.h; sourceTree = "<group>"; };
 		0745F8F9143316B70084CD0B /* KWSingleton.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KWSingleton.m; sourceTree = "<group>"; };
@@ -118,6 +117,7 @@
 		077E478913C9188400BB3BF3 /* DatePatch.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePatch.m; sourceTree = "<group>"; };
 		077E478C13C9195800BB3BF3 /* RelativeDateTime.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RelativeDateTime.h; sourceTree = "<group>"; };
 		077E478D13C9195800BB3BF3 /* RelativeDateTime.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RelativeDateTime.m; sourceTree = "<group>"; };
+		078F7F46143A932700F6DCFF /* NotifyView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = NotifyView.xib; sourceTree = "<group>"; };
 		0797740313C4B85D00DDE138 /* EditTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = EditTableCell.xib; sourceTree = "<group>"; };
 		0797740B13C4BBC100DDE138 /* bell.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bell.png; sourceTree = "<group>"; };
 		0797740C13C4BBC100DDE138 /* bell@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "bell@2x.png"; sourceTree = "<group>"; };
@@ -194,7 +194,7 @@
 			children = (
 				0723E58513B7486700DECC2C /* NotifyViewController.h */,
 				0723E58613B7486700DECC2C /* NotifyViewController.m */,
-				0723E58713B7486700DECC2C /* NotifyView.xib */,
+				078F7F46143A932700F6DCFF /* NotifyView.xib */,
 			);
 			name = notify;
 			sourceTree = "<group>";
@@ -485,7 +485,6 @@
 				07C58C1213B74001002832EE /* MainWindow.xib in Resources */,
 				07C58C1B13B74002002832EE /* FirstView.xib in Resources */,
 				07C58C1E13B74002002832EE /* SecondView.xib in Resources */,
-				0723E58913B7486700DECC2C /* NotifyView.xib in Resources */,
 				0723E59C13B7492000DECC2C /* SettingView.xib in Resources */,
 				0723E5A113B7496600DECC2C /* InfoView.xib in Resources */,
 				0745F8E01431F6710084CD0B /* EditView.xib in Resources */,
@@ -515,6 +514,7 @@
 				0797743813C4BBC100DDE138 /* on@2x.png in Resources */,
 				0797743913C4BBC100DDE138 /* return.png in Resources */,
 				0797743A13C4BBC100DDE138 /* return@2x.png in Resources */,
+				078F7F47143A932700F6DCFF /* NotifyView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

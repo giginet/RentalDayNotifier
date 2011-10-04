@@ -10,8 +10,8 @@
 
 @implementation NotifyViewController
 
-- (id)initWithStyle:(UITableViewStyle)style{
-  self = [super initWithStyle:style];
+- (id)init{
+  self = [super init];
   if (self) {
     // Custom initialization
   }

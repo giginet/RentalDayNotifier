@@ -23,7 +23,7 @@
 
 - (void)dealloc{
   [notifications_ release];
-  [self dealloc];
+  [super dealloc];
 }
 
 - (void)saveWithNotification:(Notification *)notification{

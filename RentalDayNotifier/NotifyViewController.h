@@ -9,7 +9,9 @@
 #import <UIKit/UIKit.h>
 #import "NotificationManager.h"
 
-@interface NotifyViewController : UITableViewController {
+@interface NotifyViewController : UIViewController <UITableViewDataSource, UITableViewDelegate> {
+  IBOutlet UITableView* tableView_;
+  IBOutlet UINavigationBar* bar_;
   NotificationManager* manager_;
 }
 
