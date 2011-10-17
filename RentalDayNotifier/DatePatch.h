@@ -14,6 +14,7 @@
 - (NSString*)dayDescription;              // 日付を読みやすい形式に出力
 - (NSString*)dayDescriptionWithYear;      // 日付を西暦付きで出力
 - (BOOL)isSameDay:(NSDate*)day;           // dayが同一日かどうか判定（時間以下は無視する）
+- (NSString*)relativeDate:(NSDate*)root;  // rootと何日離れているかを文字列で出力
 @end
 
 @interface NSDateComponents(MonkeyPatch)

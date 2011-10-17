@@ -23,5 +23,13 @@
 
 - (id)initWithNotification:(Notification*)notification;
 
+@property(readonly, retain) UIButton*    returnButton;
+@property(readonly, retain) UILabel*     rentalLabel;
+@property(readonly, retain) UILabel*     relativeLabel;
+@property(readonly, retain) UILabel*     noteLabel;
+@property(readonly, retain) UIImageView* alertIcon;
+@property(readonly, retain) UIImageView* diskIcon;
+@property(readonly, retain) UIImageView* movieIcon;
+@property(readonly, retain) UIImageView* bookIcon;
 @property(readonly, retain) Notification* notification;
 @end

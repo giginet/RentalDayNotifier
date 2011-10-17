@@ -86,4 +86,16 @@ note=note_, createdAt=createdAt_;
   return [alertDateTime_ description];
 }
 
+- (NSDate*)returnDay{
+  return [rentalDay_ dateByAddingTimeInterval:rentalPeriod_*24*60*60];
+}
+
+- (NSString*)relativeDescription{
+  return [self.returnDay relativeDate:[NSDate date]];
+}
+
+- (BOOL)isNotificationDayOn:(NSDate*)date{
+  return YES;
+}
+
 @end

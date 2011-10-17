@@ -166,12 +166,13 @@
 }
 
 - (void)pressKindToggle:(id)sender{
-  EditIconToggle* toggle = (EditIconToggle*)sender;
+  EditIconToggle* icon = (EditIconToggle*)sender;
   NSMutableIndexSet* kinds = [[[NSMutableIndexSet alloc] initWithIndexSet:notification_.kinds] autorelease];
-  if(toggle.toggle.toggle){
-    [kinds addIndex:toggle.tag];
+  NSLog(@"%@", icon.toggle);
+  if(icon.toggle.toggle){
+    [kinds addIndex:icon.tag];
   }else{
-    [kinds removeIndex:toggle.tag];
+    [kinds removeIndex:icon.tag];
   }
 }
 

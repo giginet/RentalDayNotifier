@@ -23,6 +23,8 @@
 - (NSString*)rentalDayDescription;
 - (NSString*)periodDescription;
 - (NSString*)alertDescription;
+- (NSDate*)returnDay;                  // 返却日を返します
+- (NSString*)relativeDescription;
 - (BOOL)isNotificationDayOn:(NSDate*)date;
 
 @property(readwrite) BOOL alertEnable;
@@ -32,4 +34,5 @@
 @property(readwrite, retain) NSString* note;
 @property(readwrite, assign) RelativeDateTime* alertDateTime;
 @property(readonly, retain)  NSDate* createdAt;
+@property(readonly, retain)  NSDate* returnDay;
 @end

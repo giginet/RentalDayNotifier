@@ -37,6 +37,18 @@
   NSDateComponents* comps1 = [day convertToComponents];
   return comps0.day == comps1.day && comps0.month == comps1.month && comps0.year == comps1.year;
 }
+
+- (NSString*)relativeDate:(NSDate *)root{
+  NSTimeInterval sub = [self timeIntervalSinceDate:root];
+  if([self isSameDay:[NSDate date]]){
+    return @"今日";
+  }else if(sub < 0){
+    return [NSString stringWithFormat:@"%d日前", abs(sub)/(24*60*60)];
+  }else{
+    return [NSString stringWithFormat:@"%d日後", abs(sub)/(24*60*60)];
+  }
+}
+
 @end
 
 @implementation NSDateComponents(MonkeyPatch)
